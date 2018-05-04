@@ -1,0 +1,115 @@
+16:56:30 listening server at http://0.0.0.0:5000
+16:57:9 uid undefined
+16:57:9 u { role: -1,
+  created_time: 1524905790545,
+  updated_time: 1524905790545,
+  username: '游客' }
+16:57:20 uid undefined
+16:57:20 u { role: -1,
+  created_time: 1524905790545,
+  updated_time: 1524905790545,
+  username: '游客' }
+16:57:25 uid 5ae4377098310f2e0cc8398d
+16:57:25 u { role: 2,
+  created_time: 1524905790545,
+  updated_time: 1524905790545,
+  _id: 5ae4377098310f2e0cc8398d,
+  username: '123',
+  password: '1eab58b60dbef4464fbda8aa9f80f133d39c055fe03fac48cfd42e3759530624',
+  __v: 0 }
+16:57:26 uid 5ae4377098310f2e0cc8398d
+16:57:28 uid 5ae4377098310f2e0cc8398d
+16:57:28 user { role: 2,
+  created_time: 1524905790545,
+  updated_time: 1524905790545,
+  _id: 5ae4377098310f2e0cc8398d,
+  username: '123',
+  password: '1eab58b60dbef4464fbda8aa9f80f133d39c055fe03fac48cfd42e3759530624',
+  __v: 0 }
+16:57:28 uid 5ae4377098310f2e0cc8398d
+16:57:29 uid 5ae4377098310f2e0cc8398d
+16:57:29 user { role: 2,
+  created_time: 1524905790545,
+  updated_time: 1524905790545,
+  _id: 5ae4377098310f2e0cc8398d,
+  username: '123',
+  password: '1eab58b60dbef4464fbda8aa9f80f133d39c055fe03fac48cfd42e3759530624',
+  __v: 0 }
+16:57:29 uid 5ae4377098310f2e0cc8398d
+16:57:33 uid 5ae4377098310f2e0cc8398d
+16:57:34 uid 5ae4377098310f2e0cc8398d
+18:30:23 listening server at http://0.0.0.0:5000
+14:49:4 listening server at http://0.0.0.0:5000
+14:49:10 uid undefined
+14:49:10 u { role: -1,
+  created_time: 1524984544321,
+  updated_time: 1524984544321,
+  username: '游客' }
+14:50:27 uid undefined
+14:50:27 u { role: -1,
+  created_time: 1524984544321,
+  updated_time: 1524984544321,
+  username: '游客' }
+16:56:31 uid undefined
+16:56:31 u { role: -1,
+  created_time: 1524984544321,
+  updated_time: 1524984544321,
+  username: '游客' }
+16:56:34 uid undefined
+16:56:34 登录检测: 没有登录 GET
+16:56:36 uid undefined
+16:56:36 登录检测: 没有登录 GET
+16:57:17 uid 5ae4377098310f2e0cc8398d
+16:57:17 u { role: 2,
+  created_time: 1524905790545,
+  updated_time: 1524905790545,
+  _id: 5ae4377098310f2e0cc8398d,
+  username: '123',
+  password: '1eab58b60dbef4464fbda8aa9f80f133d39c055fe03fac48cfd42e3759530624',
+  __v: 0 }
+16:57:19 uid 5ae4377098310f2e0cc8398d
+17:53:59 listening server at http://0.0.0.0:5000
+19:39:5 listening server at http://0.0.0.0:5000
+15:3:53 listening server at http://0.0.0.0:5000
+15:4:9 uid undefined
+15:4:9 u { role: -1,
+  created_time: 1525417433066,
+  updated_time: 1525417433066,
+  username: '游客' }
+17:51:17 listening server at http://0.0.0.0:5000
+17:59:11 listening server at http://0.0.0.0:5000
+17:59:12 uid undefined
+17:59:12 u { role: -1,
+  created_time: 1525427951650,
+  updated_time: 1525427951650,
+  _id: 5aec2ef0802ca23134936687,
+  username: '游客' }
+18:4:41 uid undefined
+18:4:41 u { role: -1,
+  created_time: 1525427951650,
+  updated_time: 1525427951650,
+  _id: 5aec3039802ca23134936688,
+  username: '游客' }
+18:25:12 listening server at http://0.0.0.0:5000
+18:25:17 uid undefined
+18:25:17 u { role: -1,
+  created_time: 1525429512468,
+  updated_time: 1525429512468,
+  _id: 5aec350d35071636647a4d80,
+  username: '游客' }
+18:25:26 u { role: -1,
+  created_time: 1525429512468,
+  updated_time: 1525429512468,
+  _id: 5aec351635071636647a4d82,
+  username: '游客' }
+18:25:26 uid undefined
+18:25:50 listening server at http://0.0.0.0:5000
+18:26:4 uid undefined
+18:26:4 u { role: -1,
+  created_time: 1525429550323,
+  updated_time: 1525429550323,
+  _id: 5aec353cc517f92718fb857d,
+  username: '游客' }
+18:37:12 listening server at http://0.0.0.0:5000
+18:38:2 listening server at http://0.0.0.0:5000
+18:38:21 listening server at http://0.0.0.0:5000
