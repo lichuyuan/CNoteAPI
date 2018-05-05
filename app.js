@@ -44,17 +44,20 @@ const configureTemplate = () => {
     })
 
     // 引入自定义的过滤器, 过滤器就是一个自定义的函数, nunjucks 可以用来处理数据
-    const formattedTime = require('./filter/formatted_time')
+    const {formattedTime, formattedLevel} = require('./filter/formatted_time')
     // nunjucks 添加自定义的过滤器
     env.addFilter('formattedTime', (ts) => formattedTime(ts))
+    env.addFilter('formattedLevel', (ts) => formattedLevel(ts))
 }
 
 const registerRoutes = () => {
     const index = require('./routes/index')
     const todo = require('./routes/todo')
+    const api = require('./routes/api')
 
     app.use('/', index)
     app.use('/todo', todo)
+    app.use('/api', api)
 
     app.use((request, response, next) => {
         response.status(404)

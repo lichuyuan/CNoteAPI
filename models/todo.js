@@ -10,6 +10,10 @@ const todoSchema = new Schema({
         default: false,
     },
     user_id: String,
+    level: {
+        type: Number,
+        default: 0, // 0 重要-紧急 1 重要-不紧急 2 不重要-紧急 3 不重要-不紧急
+    },
     created_time: {
         type: Number,
         default: Date.now(),

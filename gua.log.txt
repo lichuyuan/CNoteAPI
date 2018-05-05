@@ -113,3 +113,482 @@
 18:37:12 listening server at http://0.0.0.0:5000
 18:38:2 listening server at http://0.0.0.0:5000
 18:38:21 listening server at http://0.0.0.0:5000
+9:11:6 listening server at http://0.0.0.0:5000
+15:27:8 listening server at http://0.0.0.0:5000
+15:28:18 listening server at http://0.0.0.0:5000
+15:28:19 uid undefined
+15:28:19 u { role: -1,
+  created_time: 1525505298041,
+  updated_time: 1525505298041,
+  _id: 5aed5d13beaf7f3d08d7cc35,
+  username: '游客' }
+15:56:41 uid undefined
+15:56:41 登录检测: 没有登录 GET
+15:56:44 uid undefined
+15:56:44 登录检测: 没有登录 GET
+15:56:57 uid undefined
+15:56:57 登录检测: 没有登录 GET
+15:58:12 listening server at http://0.0.0.0:5000
+15:58:14 uid undefined
+15:58:14 u { role: -1,
+  created_time: 1525507092021,
+  updated_time: 1525507092021,
+  _id: 5aed641627fdda0a68a02782,
+  username: '游客' }
+15:58:15 uid undefined
+15:58:15 { role: -1,
+  created_time: 1525507092021,
+  updated_time: 1525507092021,
+  _id: 5aed641727fdda0a68a02783,
+  username: '游客' }
+15:58:15 登录检测: 没有登录 GET
+15:59:38 uid undefined
+15:59:38 { role: -1,
+  created_time: 1525507092021,
+  updated_time: 1525507092021,
+  _id: 5aed646a27fdda0a68a02784,
+  username: '游客' }
+15:59:38 登录检测: 没有登录 GET
+16:0:42 listening server at http://0.0.0.0:5000
+16:0:45 undefined
+16:1:29 undefined
+16:1:32 undefined
+16:1:35 undefined
+16:1:38 undefined
+16:1:49 uid undefined
+16:1:49 u { role: -1,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ed4d58a930bcd32049,
+  username: '游客' }
+16:1:51 undefined
+16:1:54 uid 5aed64ec4d58a930bcd32048
+16:1:55 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:1:57 uid 5aed64ec4d58a930bcd32048
+16:1:57 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:2:49 uid 5aed64ec4d58a930bcd32048
+16:2:49 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:3:58 uid 5aed64ec4d58a930bcd32048
+16:3:58 user { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:3:58 uid 5aed64ec4d58a930bcd32048
+16:3:58 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:5:4 t { completed: false,
+  created_time: 1525507242071,
+  updated_time: 1525507242071,
+  _id: 5aed656e4d58a930bcd3204a,
+  task: '123',
+  __v: 0,
+  user_id: '5aed64ec4d58a930bcd32048' }
+16:5:40 uid 5aed64ec4d58a930bcd32048
+16:5:40 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:5:46 uid 5aed64ec4d58a930bcd32048
+16:5:46 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:5:47 undefined
+16:5:50 uid 5aed65da4d58a930bcd3204b
+16:5:50 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed65da4d58a930bcd3204b,
+  username: 'asd',
+  password: '5d9087bac4a36f10303de93028589db03d883bdeb9449de4f2a212f4e7bb0ae7',
+  __v: 0 }
+16:5:52 uid 5aed65da4d58a930bcd3204b
+16:5:52 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed65da4d58a930bcd3204b,
+  username: 'asd',
+  password: '5d9087bac4a36f10303de93028589db03d883bdeb9449de4f2a212f4e7bb0ae7',
+  __v: 0 }
+16:5:54 uid 5aed65da4d58a930bcd3204b
+16:5:54 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed65da4d58a930bcd3204b,
+  username: 'asd',
+  password: '5d9087bac4a36f10303de93028589db03d883bdeb9449de4f2a212f4e7bb0ae7',
+  __v: 0 }
+16:9:22 listening server at http://0.0.0.0:5000
+16:9:28 uid 5aed65da4d58a930bcd3204b
+16:9:28 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed65da4d58a930bcd3204b,
+  username: 'asd',
+  password: '5d9087bac4a36f10303de93028589db03d883bdeb9449de4f2a212f4e7bb0ae7',
+  __v: 0 }
+16:9:28 uid 5aed65da4d58a930bcd3204b
+16:10:2 uid 5aed65da4d58a930bcd3204b
+16:10:2 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed65da4d58a930bcd3204b,
+  username: 'asd',
+  password: '5d9087bac4a36f10303de93028589db03d883bdeb9449de4f2a212f4e7bb0ae7',
+  __v: 0 }
+16:10:2 uid 5aed65da4d58a930bcd3204b
+16:10:6 uid undefined
+16:10:6 u { role: -1,
+  created_time: 1525507762532,
+  updated_time: 1525507762532,
+  _id: 5aed66de9e97b13eccd6623e,
+  username: '游客' }
+16:10:7 undefined
+16:10:10 uid 5aed64ec4d58a930bcd32048
+16:10:11 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:10:12 uid 5aed64ec4d58a930bcd32048
+16:10:12 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:10:12 uid 5aed64ec4d58a930bcd32048
+16:11:4 uid 5aed64ec4d58a930bcd32048
+16:11:4 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:11:4 uid 5aed64ec4d58a930bcd32048
+16:15:3 todo id  5aed656e4d58a930bcd3204a
+16:15:3 uid 5aed64ec4d58a930bcd32048
+16:15:3 uid 5aed64ec4d58a930bcd32048
+16:15:3 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:16:34 listening server at http://0.0.0.0:5000
+16:16:41 uid 5aed64ec4d58a930bcd32048
+16:16:41 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:16:41 uid 5aed64ec4d58a930bcd32048
+16:17:4 uid 5aed64ec4d58a930bcd32048
+16:17:4 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:17:4 uid 5aed64ec4d58a930bcd32048
+16:17:7 uid 5aed64ec4d58a930bcd32048
+16:17:7 user { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:17:7 uid 5aed64ec4d58a930bcd32048
+16:17:7 uid 5aed64ec4d58a930bcd32048
+16:17:7 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:20:46 listening server at http://0.0.0.0:5000
+16:21:16 listening server at http://0.0.0.0:5000
+16:21:22 uid 5aed64ec4d58a930bcd32048
+16:21:22 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:21:22 uid 5aed64ec4d58a930bcd32048
+16:22:54 listening server at http://0.0.0.0:5000
+16:22:57 uid 5aed64ec4d58a930bcd32048
+16:22:57 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:22:57 uid 5aed64ec4d58a930bcd32048
+16:43:25 uid 5aed64ec4d58a930bcd32048
+16:43:25 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:25 uid 5aed64ec4d58a930bcd32048
+16:43:29 uid 5aed64ec4d58a930bcd32048
+16:43:29 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:29 uid 5aed64ec4d58a930bcd32048
+16:43:36 uid 5aed64ec4d58a930bcd32048
+16:43:36 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:36 uid 5aed64ec4d58a930bcd32048
+16:43:38 uid 5aed64ec4d58a930bcd32048
+16:43:38 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:38 uid 5aed64ec4d58a930bcd32048
+16:43:40 uid 5aed64ec4d58a930bcd32048
+16:43:40 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:40 uid 5aed64ec4d58a930bcd32048
+16:43:41 uid 5aed64ec4d58a930bcd32048
+16:43:41 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:41 uid 5aed64ec4d58a930bcd32048
+16:43:43 uid 5aed64ec4d58a930bcd32048
+16:43:43 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:43 uid 5aed64ec4d58a930bcd32048
+16:43:43 uid 5aed64ec4d58a930bcd32048
+16:43:43 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:43 uid 5aed64ec4d58a930bcd32048
+16:43:44 uid 5aed64ec4d58a930bcd32048
+16:43:44 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:44 uid 5aed64ec4d58a930bcd32048
+16:43:45 uid 5aed64ec4d58a930bcd32048
+16:43:45 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:45 uid 5aed64ec4d58a930bcd32048
+16:43:46 uid 5aed64ec4d58a930bcd32048
+16:43:46 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:46 uid 5aed64ec4d58a930bcd32048
+16:43:46 uid 5aed64ec4d58a930bcd32048
+16:43:46 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:46 uid 5aed64ec4d58a930bcd32048
+16:43:47 uid 5aed64ec4d58a930bcd32048
+16:43:47 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:47 uid 5aed64ec4d58a930bcd32048
+16:43:48 uid 5aed64ec4d58a930bcd32048
+16:43:48 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:48 uid 5aed64ec4d58a930bcd32048
+16:43:48 uid 5aed64ec4d58a930bcd32048
+16:43:48 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:48 uid 5aed64ec4d58a930bcd32048
+16:43:49 uid 5aed64ec4d58a930bcd32048
+16:43:49 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+16:43:49 uid 5aed64ec4d58a930bcd32048
+17:3:54 listening server at http://0.0.0.0:5000
+17:7:1 listening server at http://0.0.0.0:5000
+17:7:10 uid 5aed64ec4d58a930bcd32048
+17:7:11 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+17:34:24 listening server at http://0.0.0.0:5000
+17:40:31 uid 5aed64ec4d58a930bcd32048
+17:40:33 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+17:40:35 undefined
+17:41:25 undefined
+17:41:29 undefined
+17:41:45 uid 5aed64ec4d58a930bcd32048
+17:41:45 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+17:41:47 undefined
+17:42:34 undefined
+17:42:43 undefined
+17:43:3 undefined
+17:43:20 undefined
+17:44:6 undefined
+17:44:10 undefined
+17:45:52 undefined
+17:46:3 undefined
+17:46:10 undefined
+17:47:0 undefined
+17:47:40 uid 5aed64ec4d58a930bcd32048
+17:47:40 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+17:47:57 undefined
+17:56:7 undefined
+17:56:40 uid 5aed64ec4d58a930bcd32048
+17:56:40 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+17:56:42 undefined
+17:56:46 uid 5aed7fd8efe71d1f74a5a5a8
+17:56:46 u { role: 2,
+  created_time: 1525512864743,
+  updated_time: 1525512864743,
+  _id: 5aed7fd8efe71d1f74a5a5a8,
+  username: 'zxc',
+  password: '5d0f1eb4af01e81889f8913f7739b7c08696b2a6099325c60a27a704cb5e0148',
+  __v: 0 }
+17:56:47 undefined
+17:56:59 uid 5aed7fd8efe71d1f74a5a5a8
+17:56:59 { role: 2,
+  created_time: 1525512864743,
+  updated_time: 1525512864743,
+  _id: 5aed7fd8efe71d1f74a5a5a8,
+  username: 'zxc',
+  password: '5d0f1eb4af01e81889f8913f7739b7c08696b2a6099325c60a27a704cb5e0148',
+  __v: 0 }
+17:56:59 uid 5aed7fd8efe71d1f74a5a5a8
+18:35:19 listening server at http://0.0.0.0:5000

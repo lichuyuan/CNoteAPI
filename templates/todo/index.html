@@ -33,6 +33,7 @@
     <tr>
         <th>#</th>
         <th>Task</th>
+        <th>Level</th>
         <th>Created Time</th>
         <th>Updated Time</th>
         <th>Status</th>
@@ -49,13 +50,14 @@
     <tr class="{{ rowClass }}">
         <td>{{ loop.index }}</td>
         <td>{{ t.task }}</td>
+        <td>{{ t.level | formattedLevel }}</td>
         <td>{{ t.created_time | formattedTime }}</td>
         <td>{{ t.updated_time | formattedTime }}</td>
         <td>{{ t.completed }}</td>
         <td>
             <a href="/todo/edit/{{ t.id }}">edit</a>
             <a href="/todo/delete/{{ t.id }}">delete</a>
-            <a href="/todo/complete/{{ t.id }}">complete</a>·
+            <a href="/todo/complete/{{ t.id }}">complete</a>
         </td>
     </tr>
     {% endfor %}

@@ -9,7 +9,8 @@ const {currentUser, loginRequired} = require('./main')
 const router = express.Router()
 
 router.get('/', loginRequired, async (request, response) => {
-    const todoList = await Todo.all()
+    const u = await currentUser(request)
+    const todoList = await Todo.findAll('user_id', u.id)
     const args = {
         todos: todoList,
     }

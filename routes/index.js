@@ -19,6 +19,7 @@ router.get('/', async (request, response) => {
 
 router.get('/login', (request, response) => {
     const next_url = request.query.next_url
+    log(next_url)
     response.render('index/login.html', {
         next_url: next_url,
     })
