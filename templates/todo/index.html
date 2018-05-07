@@ -34,6 +34,7 @@
         <th>#</th>
         <th>Task</th>
         <th>Level</th>
+        <th>Completed Time</th>
         <th>Created Time</th>
         <th>Updated Time</th>
         <th>Status</th>
@@ -51,6 +52,7 @@
         <td>{{ loop.index }}</td>
         <td>{{ t.task }}</td>
         <td>{{ t.level | formattedLevel }}</td>
+        <td>{{ t.completed_time | formattedTime }}</td>
         <td>{{ t.created_time | formattedTime }}</td>
         <td>{{ t.updated_time | formattedTime }}</td>
         <td>{{ t.completed }}</td>

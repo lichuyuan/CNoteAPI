@@ -592,3 +592,238 @@
   __v: 0 }
 17:56:59 uid 5aed7fd8efe71d1f74a5a5a8
 18:35:19 listening server at http://0.0.0.0:5000
+9:38:18 listening server at http://0.0.0.0:5000
+9:38:55 listening server at http://0.0.0.0:5000
+9:39:9 uid undefined
+9:39:9 u { role: -1,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefae3df3d3bf2b3857d786,
+  username: '游客' }
+9:39:17 undefined
+9:39:25 undefined
+9:40:5 undefined
+9:48:56 undefined
+9:49:43 uid undefined
+9:49:43 u { role: -1,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d788,
+  username: '游客' }
+9:49:45 undefined
+9:49:49 uid 5aefb0b7f3d3bf2b3857d787
+9:49:50 u { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+9:49:55 uid 5aefb0b7f3d3bf2b3857d787
+9:49:55 { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+9:49:55 uid 5aefb0b7f3d3bf2b3857d787
+9:50:1 uid 5aefb0b7f3d3bf2b3857d787
+9:50:1 user { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+9:50:1 uid 5aefb0b7f3d3bf2b3857d787
+9:50:1 { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+9:50:1 uid 5aefb0b7f3d3bf2b3857d787
+9:51:36 listening server at http://0.0.0.0:5000
+9:57:56 listening server at http://0.0.0.0:5000
+10:0:25 uid 5aefb0b7f3d3bf2b3857d787
+10:0:25 { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+10:0:25 uid 5aefb0b7f3d3bf2b3857d787
+10:0:30 uid 5aefb0b7f3d3bf2b3857d787
+10:0:30 user { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+10:0:30 uid 5aefb0b7f3d3bf2b3857d787
+10:0:30 { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+10:0:30 uid 5aefb0b7f3d3bf2b3857d787
+10:1:12 uid 5aefb0b7f3d3bf2b3857d787
+10:1:13 u { role: 2,
+  created_time: 1525657135304,
+  updated_time: 1525657135304,
+  _id: 5aefb0b7f3d3bf2b3857d787,
+  username: '111',
+  password: '340168c8cfeadd66d13b0caac5418c8b69e499b0dde5397bc1a708948f8c4d4b',
+  __v: 0 }
+10:1:53 uid undefined
+10:1:53 u { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefb3918c87a30b88ea0d0a,
+  username: '游客' }
+10:1:55 uid undefined
+10:1:55 { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefb3938c87a30b88ea0d0b,
+  username: '游客' }
+10:1:55 登录检测: 没有登录 GET
+10:1:55 /todo
+10:1:58 uid undefined
+10:1:58 { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefb3968c87a30b88ea0d0c,
+  username: '游客' }
+10:1:58 登录检测: 没有登录 GET
+10:1:58 /todo
+10:4:28 uid undefined
+10:4:28 { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefb42c8c87a30b88ea0d0d,
+  username: '游客' }
+10:4:28 登录检测: 没有登录 GET
+10:4:28 /todo
+10:5:41 uid 5aed64ec4d58a930bcd32048
+10:5:41 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+10:5:41 uid 5aed64ec4d58a930bcd32048
+10:27:20 uid 5aed64ec4d58a930bcd32048
+10:27:20 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+10:27:20 uid 5aed64ec4d58a930bcd32048
+10:41:36 uid 5aed64ec4d58a930bcd32048
+10:41:36 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+10:41:40 uid 5aed64ec4d58a930bcd32048
+10:41:40 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+11:8:43 uid 5aed64ec4d58a930bcd32048
+11:8:43 { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+11:8:43 uid 5aed64ec4d58a930bcd32048
+11:10:50 uid undefined
+11:10:50 { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefc3ba8c87a30b88ea0d0e,
+  username: '游客' }
+11:10:50 登录检测: 没有登录 GET
+11:10:50 /todo
+11:10:54 undefined
+11:10:58 uid 5aed64ec4d58a930bcd32048
+11:10:58 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+11:11:2 uid undefined
+11:11:2 u { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefc3c68c87a30b88ea0d0f,
+  username: '游客' }
+11:11:5 uid undefined
+11:11:5 u { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefc3c98c87a30b88ea0d10,
+  username: '游客' }
+11:11:6 undefined
+11:11:11 undefined
+11:11:19 uid undefined
+11:11:19 u { role: -1,
+  created_time: 1525658276606,
+  updated_time: 1525658276606,
+  _id: 5aefc3d78c87a30b88ea0d11,
+  username: '游客' }
+11:11:26 undefined
+11:11:36 undefined
+11:14:18 uid 5aed64ec4d58a930bcd32048
+11:14:18 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+11:14:21 uid 5aed64ec4d58a930bcd32048
+11:14:21 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+11:14:42 listening server at http://0.0.0.0:5000
+11:14:44 uid 5aed64ec4d58a930bcd32048
+11:14:45 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+11:14:46 uid 5aed64ec4d58a930bcd32048
+11:14:46 u { role: 2,
+  created_time: 1525507242052,
+  updated_time: 1525507242052,
+  _id: 5aed64ec4d58a930bcd32048,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+19:46:43 listening server at http://0.0.0.0:5000
