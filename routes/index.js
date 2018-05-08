@@ -46,6 +46,10 @@ router.get('/register', (request, response) => {
     response.render('index/register.html')
 })
 
+router.get('/base', (request, response) => {
+    response.render('base.html')
+})
+
 router.post('/register', async (request, response) => {
     const form = request.body
     const u = await User.register(form)
