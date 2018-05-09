@@ -13,6 +13,8 @@ router.get('/', loginRequired, async (request, response) => {
     const todoList = await Todo.findAll('user_id', u.id)
     const args = {
         todos: todoList,
+        user: u,
+        path: 'todo',
     }
     response.render('todo/index.html', args)
 })
@@ -20,7 +22,6 @@ router.get('/', loginRequired, async (request, response) => {
 router.post('/add', async (request, response) => {
     const form = request.body
     const u = await currentUser(request)
-    log('user', u)
     const t = await Todo.create(form, {
         user_id: u.id,
     })
@@ -29,7 +30,6 @@ router.post('/add', async (request, response) => {
 
 router.get('/delete/:todoId', async (request, response) => {
     const todoId = request.params.todoId
-    log('todo id ', todoId)
     const t = await Todo.remove(todoId)
     response.redirect('/todo')
 })
@@ -37,7 +37,6 @@ router.get('/delete/:todoId', async (request, response) => {
 router.get('/edit/:todoId', async (request, response) => {
     const id = request.params.todoId
     const t = await Todo.get(id)
-    log('t', t)
     const args = {
         todo: t,
     }

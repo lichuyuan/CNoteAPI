@@ -1,57 +1,8 @@
-<html>
-<head>
-    <title>Todo</title>
-</head>
-
-<body>
 {% extends "base.html" %}
 
-{% block content %}
-<!--<div class="center">-->
-    <!--<h1>Todo</h1>-->
-    <!--<form action="/todo/add" method="post">-->
-    <!--<input type="text" placeholder="Add Todo" name="task">-->
-    <!--<input class="pure-button pure-button-primary" type="submit" value="Add">-->
-    <!--</form>-->
-<!--</div>-->
+{% block username %}{{ user.username }}{% endblock username %}
 
-<!--<table class="todo-table pure-table pure-table-horizontal pure-table-striped">-->
-    <!--<thead>-->
-    <!--<tr>-->
-        <!--<th>#</th>-->
-        <!--<th>Task</th>-->
-        <!--<th>Level</th>-->
-        <!--<th>Completed Time</th>-->
-        <!--<th>Created Time</th>-->
-        <!--<th>Updated Time</th>-->
-        <!--<th>Status</th>-->
-        <!--<th>Action</th>-->
-    <!--</tr>-->
-    <!--</thead>-->
-    <!--<tbody>-->
-    <!--{% for t in todos %}-->
-    <!--{% if t.completed %}-->
-        <!--{% set rowClass = "completed" %}-->
-    <!--{% else %}-->
-        <!--{% set rowClass = "" %}-->
-    <!--{% endif %}-->
-    <!--<tr class="{{ rowClass }}">-->
-        <!--<td>{{ loop.index }}</td>-->
-        <!--<td>{{ t.task }}</td>-->
-        <!--<td>{{ t.level | formattedLevel }}</td>-->
-        <!--<td>{{ t.completed_time | formattedTime }}</td>-->
-        <!--<td>{{ t.created_time | formattedTime }}</td>-->
-        <!--<td>{{ t.updated_time | formattedTime }}</td>-->
-        <!--<td>{{ t.completed }}</td>-->
-        <!--<td>-->
-            <!--<a href="/todo/edit/{{ t.id }}">edit</a>-->
-            <!--<a href="/todo/delete/{{ t.id }}">delete</a>-->
-            <!--<a href="/todo/complete/{{ t.id }}">complete</a>-->
-        <!--</td>-->
-    <!--</tr>-->
-    <!--{% endfor %}-->
-    <!--</tbody>-->
-<!--</table>-->
+{% block content %}
 <div class="wrapper wrapper-content  animated fadeInRight">
     <div class="row">
         <div class="col-lg-4">
@@ -226,9 +177,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
-
-
-
-</body>
-</html>
+{% endblock content %}

@@ -53,11 +53,11 @@ const configureTemplate = () => {
 const registerRoutes = () => {
     const index = require('./routes/index')
     const todo = require('./routes/todo')
-    const api = require('./routes/api')
+    const api = require('./routes/api/todo')
 
     app.use('/', index)
     app.use('/todo', todo)
-    app.use('/api', api)
+    app.use('/api/todo', api)
 
     app.use((request, response, next) => {
         response.status(404)
