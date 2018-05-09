@@ -17,13 +17,11 @@
   <link href="/static/css/animate.css" rel="stylesheet">
   <link href="/static/css/style.css" rel="stylesheet">
 
-
-
 </head>
 
 <body>
 
-<div id="wrapper">
+<div id="wrapper" >
   {% block sidebar %}
   <nav class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
@@ -245,8 +243,6 @@
   </div>
 </div>
 
-
-
 <!-- Mainly scripts -->
 <script src="/static/js/jquery-2.1.1.js"></script>
 <script src="/static/js/jquery-ui-1.10.4.min.js"></script>
@@ -264,7 +260,6 @@
         $("#todo, #inprogress, #completed").sortable({
             connectWith: ".connectList",
             update: function( event, ui ) {
-
                 var todo = $( "#todo" ).sortable( "toArray" );
                 var inprogress = $( "#inprogress" ).sortable( "toArray" );
                 var completed = $( "#completed" ).sortable( "toArray" );

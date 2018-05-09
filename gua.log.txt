@@ -1130,3 +1130,102 @@
   password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
   __v: 0 }
 17:43:48 uid 5aed64ec4d58a930bcd32048
+22:17:0 listening server at http://0.0.0.0:5000
+22:17:27 listening server at http://0.0.0.0:5000
+22:17:34 uid undefined
+22:17:34 u { role: -1,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b17e357b15173488867f,
+  username: '游客' }
+22:17:38 uid undefined
+22:17:38 { role: -1,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b182357b151734888680,
+  username: '游客' }
+22:17:38 登录检测: 没有登录 GET
+22:17:38 /todo
+22:17:41 uid undefined
+22:17:41 { role: -1,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b185357b151734888681,
+  username: '游客' }
+22:17:41 登录检测: 没有登录 GET
+22:17:41 /todo
+22:17:52 uid undefined
+22:17:52 u { role: -1,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b190357b151734888683,
+  username: '游客' }
+22:17:53 undefined
+22:17:55 uid 5af1b18f357b151734888682
+22:17:56 u { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:17:58 uid 5af1b18f357b151734888682
+22:17:58 { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:17:58 uid 5af1b18f357b151734888682
+22:18:17 uid 5af1b18f357b151734888682
+22:18:17 user { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:18:17 uid 5af1b18f357b151734888682
+22:18:17 { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:18:17 uid 5af1b18f357b151734888682
+22:18:20 uid 5af1b18f357b151734888682
+22:18:20 user { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:18:20 { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:18:20 uid 5af1b18f357b151734888682
+22:18:20 uid 5af1b18f357b151734888682
+22:18:23 uid 5af1b18f357b151734888682
+22:18:23 user { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:18:23 uid 5af1b18f357b151734888682
+22:18:23 { role: 2,
+  created_time: 1525789047266,
+  updated_time: 1525789047266,
+  _id: 5af1b18f357b151734888682,
+  username: 'qwe',
+  password: '860c2d1b70b0302f01bf4ab7fe02968c7a77fff092a8114f0faa058090939a75',
+  __v: 0 }
+22:18:23 uid 5af1b18f357b151734888682
