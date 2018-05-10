@@ -10,6 +10,7 @@ const router = express.Router()
 
 router.get('/', loginRequired, async (request, response) => {
     const u = await currentUser(request)
+
     const todoList = await Todo.findAll('user_id', u.id)
     const args = {
         todos: todoList,
@@ -21,6 +22,7 @@ router.get('/', loginRequired, async (request, response) => {
 
 router.post('/add', async (request, response) => {
     const form = request.body
+    log('create forma', form, typeof form)
     const u = await currentUser(request)
     const t = await Todo.create(form, {
         user_id: u.id,

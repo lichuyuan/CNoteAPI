@@ -1,4 +1,4 @@
-const {mongoose, Model} = require('./main')
+const { mongoose, Model } = require('./main')
 const {log} = require('../utils')
 
 const Schema = mongoose.Schema
