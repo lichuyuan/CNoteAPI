@@ -10,7 +10,11 @@ const router = express.Router()
 
 router.get('/', async (request, response) => {
     const u  = await currentUser(request)
-    const Models = await Model.findAll('user_id', u.id)
+    const qs = {
+        'user_id': u.id,
+        'level': 1,
+    }
+    const Models = await Model.findByQuerys(qs)
     const dict = {
         success: true,
         data: Models,
