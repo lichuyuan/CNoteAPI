@@ -246,7 +246,7 @@
 
 <script>
     console.log(1)
-    $.post('/api/todo/add',{task: 'test'},(e) => {console.log(e)})
+    $.get('/api/todo/', (e) => {console.log(e)})
     console.log(2)
 </script>
 
