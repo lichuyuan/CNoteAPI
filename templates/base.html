@@ -232,13 +232,14 @@
 <script>
     $(document).ready(function(){
 
-        $("#todo, #inprogress, #completed").sortable({
+        $("#danger, #warning, #info, #success").sortable({
             connectWith: ".connectList",
             update: function( event, ui ) {
-                var todo = $( "#todo" ).sortable( "toArray" );
-                var inprogress = $( "#inprogress" ).sortable( "toArray" );
-                var completed = $( "#completed" ).sortable( "toArray" );
-                $('.output').html("ToDo: " + window.JSON.stringify(todo) + "<br/>" + "In Progress: " + window.JSON.stringify(inprogress) + "<br/>" + "Completed: " + window.JSON.stringify(completed));
+                var danger = $( "#danger" ).sortable( "toArray" );
+                var warning = $( "#warning" ).sortable( "toArray" );
+                var info = $( "#info" ).sortable( "toArray" );
+                var success = $( "#success" ).sortable( "toArray" );
+                $('.output').html("danger: " + window.JSON.stringify(danger) + "<br/>" + "warning: " + window.JSON.stringify(warning) + "<br/>" + "info: " + window.JSON.stringify(info)+ "<br/>" + "success: " + window.JSON.stringify(success));
             }
         }).disableSelection();
     });

@@ -2,7 +2,7 @@ const express = require('express')
 
 const Todo = require('../models/todo')
 const { log } = require('../utils')
-const {currentUser, loginRequired} = require('./main')
+const { currentUser, loginRequired } = require('./main')
 
 // 使用 express.Router 可以创建模块化的路由
 // 类似我们以前实现的形式
@@ -14,8 +14,15 @@ router.get('/', loginRequired, async (request, response) => {
         'user_id': u.id
     }
     const todoList = await Todo.findByQuerys(qs)
+    let t = []
+    for (let i=0; i<=3; i++) {
+        t.push({
+            'level': i,
+            'todos': todoList.filter((e) => e['level'] === i),
+        })
+    }
     const args = {
-        todos: todoList,
+        todos: t,
         user: u,
     }
     response.render('todo/index.html', args)

@@ -5,27 +5,28 @@
 {% block content %}
 <div class="wrapper wrapper-content  animated fadeInRight">
     <div class="row">
+        {% for t in todos %}
         <div class="col-lg-3">
             <div class="ibox">
                 <div class="ibox-content">
-                    <h3>重要-紧急</h3>
+                    <h3>{{ t['level'] | formattedLevel }}</h3>
                     <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
                     <form action="/todo/add" method="post">
                         <div class="input-group">
                             <input type="text" placeholder="Add new task. " class="input input-sm form-control" name="task">
-                            <input type="hidden" value="0" name="level">
+                            <input type="hidden" value="{{ t['level'] }}" name="level">
                             <span class="input-group-btn">
                                 <button type="submit" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Add task</button>
                             </span>
                         </div>
                     </form>
-                    <ul class="sortable-list connectList agile-list" id="danger">
-                        {% for t in todos %}
-                        <li class="{{ t.level | formattedLevel }}-element" id="task1" >
-                            <div>{{ t.task }}</div>
+                    <ul class="sortable-list connectList agile-list" id="{{ t['level'] | formattedLevel }}">
+                        {% for ts in t['todos'] %}
+                        <li class="{{ ts.level | formattedLevel }}-element" id="task{{ ts._id }}" >
+                            <div>{{ ts.task }}</div>
                             <div class="agile-detail">
-                                <a href="#" class="pull-right btn btn-xs btn-white">{{ t.level | formattedLevel }}</a>
-                                <i class="fa fa-clock-o"></i>{{ t.created_time | formattedTime }}
+                                <a href="#" class="pull-right btn btn-xs btn-white">{{ ts.level | formattedLevel }}</a>
+                                <i class="fa fa-clock-o"></i>{{ ts.created_time | formattedTime }}
                             </div>
                         </li>
                         {% endfor %}
@@ -33,90 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3">
-            <div class="ibox">
-                <div class="ibox-content">
-                    <h3>重要-不紧急</h3>
-                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
-                    <form action="/todo/add" method="post">
-                        <div class="input-group">
-                            <input type="text" placeholder="Add new task. " class="input input-sm form-control" name="task">
-                            <input type="hidden" value="1" name="level">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Add task</button>
-                            </span>
-                        </div>
-                    </form>
-                    <ul class="sortable-list connectList agile-list" id="warning">
-                        {% for t in todos %}
-                        <li class="{{ t.level | formattedLevel }}-element" id="task1" >
-                            <div>{{ t.task }}</div>
-                            <div class="agile-detail">
-                                <a href="#" class="pull-right btn btn-xs btn-white">{{ t.level | formattedLevel }}</a>
-                                <i class="fa fa-clock-o"></i>{{ t.created_time | formattedTime }}
-                            </div>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="ibox">
-                <div class="ibox-content">
-                    <h3>不重要-紧急</h3>
-                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
-                    <form action="/todo/add" method="post">
-                        <div class="input-group">
-                            <input type="text" placeholder="Add new task. " class="input input-sm form-control" name="task">
-                            <input type="hidden" value="2" name="level">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Add task</button>
-                            </span>
-                        </div>
-                    </form>
-                    <ul class="sortable-list connectList agile-list" id="info">
-                        {% for t in todos %}
-                        <li class="{{ t.level | formattedLevel }}-element" id="task1" >
-                            <div>{{ t.task }}</div>
-                            <div class="agile-detail">
-                                <a href="#" class="pull-right btn btn-xs btn-white">{{ t.level | formattedLevel }}</a>
-                                <i class="fa fa-clock-o"></i>{{ t.created_time | formattedTime }}
-                            </div>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="ibox">
-                <div class="ibox-content">
-                    <h3>不重要-不紧急</h3>
-                    <p class="small"><i class="fa fa-hand-o-up"></i> Drag task between list</p>
-                    <form action="/todo/add" method="post">
-                        <div class="input-group">
-                            <input type="text" placeholder="Add new task. " class="input input-sm form-control" name="task">
-                            <input type="hidden" value="3" name="level">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Add task</button>
-                            </span>
-                        </div>
-                    </form>
-                    <ul class="sortable-list connectList agile-list" id="success">
-                        {% for t in todos %}
-                        <li class="{{ t.level | formattedLevel }}-element" id="task1" >
-                            <div>{{ t.task }}</div>
-                            <div class="agile-detail">
-                                <a href="#" class="pull-right btn btn-xs btn-white">{{ t.level | formattedLevel }}</a>
-                                <i class="fa fa-clock-o"></i>{{ t.created_time | formattedTime }}
-                            </div>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <div class="row">
         <div class="col-lg-12">
