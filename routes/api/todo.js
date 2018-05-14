@@ -8,11 +8,11 @@ const { currentUser, loginRequired } = require('../main')
 // 类似我们以前实现的形式
 const router = express.Router()
 
-router.get('/', async (request, response) => {
+router.get('/level/:level', async (request, response) => {
     const u  = await currentUser(request)
     const qs = {
         'user_id': u.id,
-        'level': 1,
+        'level': request.params.level,
     }
     const Models = await Model.findByQuerys(qs)
     const dict = {

@@ -8,12 +8,12 @@ const {currentUser, loginRequired} = require('./main')
 // 类似我们以前实现的形式
 const router = express.Router()
 
-router.get('/:level', loginRequired, async (request, response) => {
+router.get('/', loginRequired, async (request, response) => {
     const u = await currentUser(request)
     const qs = {
         'user_id': u.id
     }
-    const todoList = await Todo.findByQuerys('user_id', u.id)
+    const todoList = await Todo.findByQuerys(qs)
     const args = {
         todos: todoList,
         user: u,
