@@ -35,6 +35,10 @@ class Model extends mongoose.Model {
         return super.find(query).exec()
     }
 
+    static async findByQuerys(querys) {
+        return super.find(querys).exec()
+    }
+
     static async create(form, kwargs={}) {
         const m = await super.create(form)
         Object.keys(kwargs).forEach(k => m[k] = kwargs[k])
