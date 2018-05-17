@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block username %}test{% endblock username %}
+
+{% block content %}
+<h3>用户资料</h3>
+<p>{{ user.id }}</p>
+<p>{{ user.username }}</p>
+<p>{{ user.password }}</p>
+<p>
+    <img src="/avatar/{{ user.avatar }}" alt="用户头像" class="avatar">
+</p>
+<div>
+    <h3>上传头像</h3>
+    <form action="/upload/avatar" method="post" enctype="multipart/form-data">
+        <p>
+            <input type="file" name="avatar" required>
+        </p>
+        <button>上传</button>
+    </form>
+</div>
+{% endblock content %}

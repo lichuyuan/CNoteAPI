@@ -21,6 +21,10 @@ const userSchema = new Schema({
         type: Number,
         default: Date.now(),
     },
+    avatar: {
+        type: String,
+        default: 'default.gif',
+    },
 })
 
 class UserStore extends Model {
