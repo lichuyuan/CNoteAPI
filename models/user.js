@@ -64,6 +64,24 @@ class UserStore extends Model {
         return this.role === 1
     }
 
+    static async update(form) {
+        const id = form.id
+        const t = await this.get(id)
+        const frozonKeys = [
+            'id',
+            'created_time',
+        ]
+        Object.keys(form).forEach(k => {
+            if (!frozonKeys.includes(k)) {
+                t[k] = form[k]
+            }
+        })
+
+        t.updated_time = Date.now()
+        t.save()
+        return t
+    }
+
     static guest() {
         // 这样设置 _id 生成的实例就不会带有 _id 了
         const o = {

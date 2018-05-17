@@ -61,6 +61,7 @@ router.get('/base', (request, response) => {
 
 router.get('/avatar', async (request, response) => {
     const u = await currentUser(request)
+    log(u)
     const args = {
         user: u,
     }
@@ -87,17 +88,23 @@ router.get('/logout', (request, response) => {
 })
 
 // 用户上传头像的路由, 这里会依次调用三个处理函数
-router.post('/upload/avatar', loginRequired, upload.single('avatar'), (request, response) => {
+router.post('/upload/avatar', loginRequired, upload.single('avatar'), async (request, response) => {
     // upload.single 获取上传的文件并且处理
     // request.file 是处理之后的信息
     log('request file', request.file)
-    const u = currentUser(request)
+    const u = await currentUser(request)
     const avatar = request.file
     // filename 是保存在 dest 中的文件名, 这里我们不使用用户上传的文件名, 直接用 multer 处理之后的名字
-    // 因为用户上传的文件名从安全角度来看是有风险的
+    // 因为用户上传的文件名从安全角度来看是有风险
+    log('u', u)
     u.avatar = avatar.filename
-    u.save()
-    response.redirect(`/user/profile/${u.id}`)
+    const t = await User.update(u)
+    const dict = {
+        success: true,
+        data: t,
+        message: '上传成功',
+    }
+    response.json(dict)
 })
 
 // 获取头像的路由

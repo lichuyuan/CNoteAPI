@@ -20,7 +20,7 @@
                             </span>
                         </div>
                     </form>
-                    <ul class="sortable-list connectList agile-list" id="{{ t['level'] | formattedLevel }}">
+                    <ul class="sortable-list connectList agile-list" id="{{ t['level'] | formattedLevelClass }}">
                         {% for ts in t['todos'] %}
                         <li class="{{ ts.level | formattedLevelClass }}-element" id="task{{ ts._id }}" >
                             <div>{{ ts.task }}</div>

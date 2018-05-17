@@ -243,6 +243,35 @@
             }
         }).disableSelection();
     });
+    let upload = function(formData) {
+        let request = {
+            url: 'http://127.0.0.1:5000/upload/avatar',
+            method: 'post',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(r) {
+                console.log(r)
+                $('.avatar').attr("src", `/avatar/${r.data.avatar}`);
+            },
+            error: function(e) {
+                console.log('debug e', e)
+            }
+        }
+        $.ajax(request)
+    }
+
+    let __main = () => {
+        let b = document.querySelector('#id-upload-button')
+        console.log(b)
+        b.addEventListener('click', () => {
+            let f = document.querySelector('#id-avatar').files[0]
+            let form = new FormData()
+            form.append('avatar', f)
+            upload(form)
+        })
+    }
+    __main()
 </script>
 
 <script>
