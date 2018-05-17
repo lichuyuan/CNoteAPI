@@ -44,10 +44,11 @@ const configureTemplate = () => {
     })
 
     // 引入自定义的过滤器, 过滤器就是一个自定义的函数, nunjucks 可以用来处理数据
-    const {formattedTime, formattedLevel} = require('./filter/formatted_time')
+    const { formattedTime, formattedLevel, formattedLevelClass } = require('./filter/formatted_time')
     // nunjucks 添加自定义的过滤器
     env.addFilter('formattedTime', (ts) => formattedTime(ts))
     env.addFilter('formattedLevel', (ts) => formattedLevel(ts))
+    env.addFilter('formattedLevelClass', (ts) => formattedLevelClass(ts))
 }
 
 const registerRoutes = () => {
