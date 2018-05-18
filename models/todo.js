@@ -55,10 +55,7 @@ class TodoStore extends Model {
     }
 }
 
-
 todoSchema.loadClass(TodoStore)
 const Todo = mongoose.model('Todo', todoSchema)
-
-log(Todo.find({'level': 0 }))
 
 module.exports = Todo

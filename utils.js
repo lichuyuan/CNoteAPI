@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 
 const formattedTime = () => {
     const d = new Date()
@@ -12,9 +13,8 @@ const formattedTime = () => {
 }
 
 const log = (...args) => {
-    const path = './gua.log.txt'
-
-    const output = fs.createWriteStream(path, {
+    const p = path.resolve(__dirname, 'debug-log.txt')
+    const output = fs.createWriteStream(p, {
         // a 表示把内容添加到文件中(以追加的形式, 而不是覆盖)
         flags: 'a'
     })
@@ -28,5 +28,5 @@ const log = (...args) => {
 }
 
 module.exports = {
-    log: log,
+    log,
 }

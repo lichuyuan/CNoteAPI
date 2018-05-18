@@ -10,10 +10,10 @@ const router = express.Router()
 
 router.get('/', loginRequired, async (request, response) => {
     const u = await currentUser(request)
-    const qs = {
+    const query = {
         'user_id': u.id
     }
-    const todoList = await Todo.findByQuerys(qs)
+    const todoList = await Todo.find(query)
     let t = []
     for (let i=0; i<=3; i++) {
         t.push({
@@ -30,7 +30,6 @@ router.get('/', loginRequired, async (request, response) => {
 
 router.post('/add', async (request, response) => {
     const form = request.body
-    log('create forma', form, typeof form)
     const u = await currentUser(request)
     const t = await Todo.create(form, {
         user_id: u.id,
