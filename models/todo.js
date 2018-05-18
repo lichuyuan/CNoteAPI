@@ -1,5 +1,5 @@
 const { mongoose, Model } = require('./main')
-const {log} = require('../utils')
+const { log } = require('../utils')
 
 const Schema = mongoose.Schema
 
@@ -29,14 +29,6 @@ const todoSchema = new Schema({
 })
 
 class TodoStore extends Model {
-    static async guest() {
-        const o = {
-            id: -1,
-            username: '游客',
-        }
-        const u = new User(o)
-        return u
-    }
 
     static async complete(id) {
         const t = await Todo.get(id)
@@ -66,5 +58,7 @@ class TodoStore extends Model {
 
 todoSchema.loadClass(TodoStore)
 const Todo = mongoose.model('Todo', todoSchema)
+
+log(Todo.find({'level': 0 }))
 
 module.exports = Todo

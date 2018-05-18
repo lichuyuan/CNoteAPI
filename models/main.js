@@ -1,33 +1,28 @@
 const mongoose = require('mongoose')
-const url = 'mongodb://localhost:27017/todo'
+const { mongodbUrl } = require('../config')
 
-//
 mongoose.Promise = global.Promise
 
-mongoose.connect(url, {
-    // useMongoClient: true,
-})
+mongoose.connect(mongodbUrl)
 
 class Model extends mongoose.Model {
+    // 查询所有
     static async all() {
         return super.find()
     }
-
+    // 根据 id 查询
     static async get(id) {
         return super.findById(id)
     }
-
+    // 单条件查询返回单个数据
     static async findBy(key, value) {
-        // es6 的语法, 与下面的代码作用一致
-        // const query = {}
-        // query[key] = value
         const query = {
             [key]: value,
         }
         // findOne 返回的是一个 query, 用 exec 执行这个 query
-        return super.findOne(query).exec()
+        return super.findOne(query)
     }
-
+    // 单条件查询返回单个数据
     static async findAll(key, value) {
         const query = {
             [key]: value,
@@ -35,8 +30,8 @@ class Model extends mongoose.Model {
         return super.find(query).exec()
     }
 
-    static async findByQuerys(querys) {
-        return super.find(querys).exec()
+    static async findByQuery(querys) {
+        return super.find(querys)
     }
 
     static async create(form, kwargs={}) {
@@ -56,6 +51,6 @@ class Model extends mongoose.Model {
 }
 
 module.exports = {
-    mongoose: mongoose,
-    Model: Model,
+    mongoose,
+    Model,
 }
