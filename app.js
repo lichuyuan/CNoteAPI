@@ -2,11 +2,11 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 const bodyParser = require('body-parser')
 const session = require('cookie-session')
-
+const cors = require('cors')
 const path = require('path')
 
-const { log } = require('./utils')
-const { secretKey } = require('./config')
+const config = require('./config')
+const { log } = require('./utils/common')
 
 const app = express()
 
@@ -18,14 +18,15 @@ const configureApp = () => {
     app.use(bodyParser.json())
 
     app.use(session({
-        secret: secretKey
+        secret: config.secretKey
     }))
 
-    configureTemplate()
+    configureNunjucks()
 
-    app.use((request, response, next) => {
-        response.locals.flash = request.session.flash
-        delete request.session.flash
+    // flash message
+    app.use((req, res, next) => {
+        res.locals.flash = req.session.flash
+        delete req.session.flash
         next()
     })
 
@@ -36,43 +37,41 @@ const configureApp = () => {
 }
 
 // nunjucks 数据
-const configureTemplate = () => {
-    const env = nunjucks.configure('templates', {
+const configureNunjucks = () => {
+    const env = nunjucks.configure('views', {
         autoescape: true,
         express: app,
         noCache: true,
     })
 
     // 引入自定义的过滤器, 过滤器就是一个自定义的函数, nunjucks 可以用来处理数据
-    const { formattedTime, formattedLevel, formattedLevelClass } = require('./filter/formatted_time')
+    const filter = require('./utils/filter')
     // nunjucks 添加自定义的过滤器
-    env.addFilter('formattedTime', (ts) => formattedTime(ts))
-    env.addFilter('formattedLevel', (ts) => formattedLevel(ts))
-    env.addFilter('formattedLevelClass', (ts) => formattedLevelClass(ts))
+    env.addFilter('time', (ts) => filter.time(ts))
+    env.addFilter('todoLevel', (ts) => filter.todoLevel(ts))
+    env.addFilter('todoLevelClass', (ts) => filter.todoLevelClass(ts))
 }
 
 const registerRoutes = () => {
-    const index = require('./routes/index')
-    const todo = require('./routes/todo')
-    const api = require('./routes/api/todo')
+    const web = require('./routes/web')
+    const api = require('./routes/api_v1')
 
-    app.use('/', index)
-    app.use('/todo', todo)
-    app.use('/api/todo', api)
+    app.use('/', web)
+    app.use('/api/v1', cors(), api)
 
-    app.use((request, response, next) => {
-        response.status(404)
-        response.render('404.html')
+    app.use((req, res, next) => {
+        res.status(404)
+        res.render('error/404.html')
     })
 
-    app.use((error, request, response, next) => {
+    app.use((error, req, res, next) => {
         console.error(error.stack)
-        response.status(500)
-        response.render('500.html')
+        res.status(500)
+        res.render('error/500.html')
     })
 }
 
-const run = (port=3000, host='') => {
+const run = (port, host) => {
     const server = app.listen(port, host, () => {
         const address = server.address()
         log(`listening server at http://${address.address}:${address.port}`)
@@ -82,7 +81,5 @@ const run = (port=3000, host='') => {
 if (require.main === module) {
     configureApp()
 
-    const port = 5000
-    const host = '0.0.0.0'
-    run(port, host)
+    run(5000, '0.0.0.0')
 }

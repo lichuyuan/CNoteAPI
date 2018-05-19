@@ -236,3 +236,32 @@
 0:59:2 uid 5afbd6ee774278171c7b383f
 1:10:29 listening server at http://0.0.0.0:5000
 1:18:16 listening server at http://0.0.0.0:5000
+15:20:16 listening server at http://0.0.0.0:5000
+15:20:34 uid undefined
+15:20:38 uid undefined
+15:20:38 { role: -1,
+  created_time: 1526714416426,
+  updated_time: 1526714416426,
+  avatar: 'default.gif',
+  _id: 5affd0467097b83914c87826,
+  username: '游客' }
+15:20:38 登录检测: 没有登录 GET
+15:20:38 /todo
+15:20:45 { role: -1,
+  created_time: 1526714416426,
+  updated_time: 1526714416426,
+  avatar: 'default.gif',
+  _id: 5affd04d7097b83914c87827,
+  username: '游客' }
+15:20:45 登录检测: 没有登录 GET
+15:20:45 uid undefined
+15:20:45 /todo
+15:23:4 /todo
+15:24:53 uid undefined
+15:24:55 undefined
+15:25:43 listening server at http://0.0.0.0:5000
+15:30:28 listening server at http://0.0.0.0:5000
+17:12:46 listening server at http://0.0.0.0:5000
+17:14:16 listening server at http://0.0.0.0:5000
+17:14:24 listening server at http://0.0.0.0:5000
+17:14:45 listening server at http://0.0.0.0:5000

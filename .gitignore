@@ -1,3 +1,4 @@
 node_modules/
 .idea/
-gua.log.txt
+uploads/
+debug.log.txt

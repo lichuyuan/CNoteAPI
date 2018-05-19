@@ -1,7 +1,7 @@
 const crypto = require('crypto')
 
-const {mongoose, Model} = require('./main')
-const {log} = require('../utils')
+const { mongoose, Model } = require('./main')
+const { log } = require('../utils/common')
 
 const Schema = mongoose.Schema
 
@@ -66,7 +66,7 @@ class UserStore extends Model {
 
     static async update(form) {
         const id = form.id
-        const t = await this.get(id)
+        const t = await this.findById(id)
         const frozonKeys = [
             'id',
             'created_time',
@@ -94,12 +94,7 @@ class UserStore extends Model {
     }
 }
 
-
 userSchema.loadClass(UserStore)
 const User = mongoose.model('User', userSchema)
-
-
-User.guest()
-
 
 module.exports = User

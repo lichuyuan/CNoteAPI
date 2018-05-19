@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
-const { mongodbUrl } = require('../config')
+const config = require('../config')
 
 mongoose.Promise = global.Promise
 
-mongoose.connect(mongodbUrl)
+mongoose.connect(config.db)
 
 class Model extends mongoose.Model {
     // // 查询所有

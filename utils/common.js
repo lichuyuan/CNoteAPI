@@ -15,7 +15,7 @@ const formattedTime = () => {
 const log = (...args) => {
     const p = path.resolve(__dirname, 'debug-log.txt')
     const output = fs.createWriteStream(p, {
-        // a 表示把内容添加到文件中(以追加的形式, 而不是覆盖)
+        // a 表示把内容追加到文件中
         flags: 'a'
     })
     const t = formattedTime()

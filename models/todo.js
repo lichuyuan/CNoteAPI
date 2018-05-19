@@ -1,5 +1,5 @@
 const { mongoose, Model } = require('./main')
-const { log } = require('../utils')
+const { log } = require('../utils/common')
 
 const Schema = mongoose.Schema
 

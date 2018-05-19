@@ -62,7 +62,7 @@
      "}");
 
   MT("fatArrow",
-     "[variable array].[property filter]([def a] [operator =>] [variable-2 a] [operator +] [number 1]);",
+     "[variable array].[property utils]([def a] [operator =>] [variable-2 a] [operator +] [number 1]);",
      "[variable a];", // No longer in scope
      "[keyword let] [variable f] [operator =] ([[ [def a], [def b] ]], [def c]) [operator =>] [variable-2 a] [operator +] [variable-2 c];",
      "[variable c];");

@@ -1,9 +1,9 @@
-const formattedTime = (ts) => {
+const time = (ts) => {
     const d = new Date(ts)
     return d.toLocaleString()
 }
 
-const formattedLevelClass = (level) => {
+const todoLevelClass = (level) => {
     const levels = {
         0: 'danger',
         1: 'warning',
@@ -13,7 +13,7 @@ const formattedLevelClass = (level) => {
     return levels[level]
 }
 
-const formattedLevel = (level) => {
+const todoLevel = (level) => {
     const levels = {
         0: '重要-紧急',
         1: '重要-不紧急',
@@ -24,7 +24,7 @@ const formattedLevel = (level) => {
 }
 
 module.exports = {
-    formattedTime: formattedTime,
-    formattedLevelClass: formattedLevelClass,
-    formattedLevel: formattedLevel,
+    time,
+    todoLevelClass,
+    todoLevel,
 }
