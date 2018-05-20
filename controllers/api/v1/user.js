@@ -1,5 +1,7 @@
-const User = require('../../../models//user')
+const User = require('../../../models/user')
 const auth = require('../../auth')
+
+const { log } = require('../../../utils/common')
 
 const avatarUpdate = async (req, res) => {
     // upload.single 获取上传的文件并且处理
@@ -43,6 +45,7 @@ const login = async (req, res) => {
 
 const register = async (req, res) => {
     const form = req.body
+    log(form, req)
     const u = await User.register(form)
     if (u === null) {
         const dict = {

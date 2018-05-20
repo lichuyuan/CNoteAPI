@@ -21,6 +21,6 @@ router.post('/todo/add', todo.add)
 router.post('/todo/update', todo.update)
 
 router.post('/user/avatar/update', auth.loginRequired, upload.single('avatar'), user.avatarUpdate)
-router.post('/todo/update', todo.update)
+router.post('/user/register', user.register)
 
 module.exports = router

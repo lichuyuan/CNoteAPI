@@ -14,7 +14,7 @@ class Model extends mongoose.Model {
     // static async get(id) {
     //     return super.findById(id)
     // }
-    // // 单条件查询返回单个数据
+    // 单条件查询返回单个数据
     // static async findBy(key, value) {
     //     const query = {
     //         [key]: value,
