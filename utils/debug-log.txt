@@ -107,3 +107,407 @@
 20:9:30 登录检测: 没有登录 GET
 20:9:31 uid undefined
 20:9:37 listening server at http://0.0.0.0:5000
+22:14:28 listening server at http://0.0.0.0:5000
+22:14:38 uid undefined
+22:51:22 uid undefined
+22:51:22 { role: -1,
+  created_time: 1526739268555,
+  updated_time: 1526739268555,
+  avatar: 'default.gif',
+  _id: 5b0039eacf7c850aa4e7010a,
+  username: '游客' }
+22:51:22 登录检测: 没有登录 GET
+22:51:45 uid undefined
+22:51:45 登录检测: 没有登录 GET
+22:51:45 { role: -1,
+  created_time: 1526739268555,
+  updated_time: 1526739268555,
+  avatar: 'default.gif',
+  _id: 5b003a01cf7c850aa4e7010b,
+  username: '游客' }
+22:52:7 uid undefined
+22:52:38 uid undefined
+22:52:38 { role: -1,
+  created_time: 1526739268555,
+  updated_time: 1526739268555,
+  avatar: 'default.gif',
+  _id: 5b003a36cf7c850aa4e7010d,
+  username: '游客' }
+22:52:38 登录检测: 没有登录 GET
+23:37:43 uid undefined
+23:38:45 uid undefined
+23:42:0 uid undefined
+23:42:5 uid undefined
+23:43:27 uid undefined
+23:44:40 uid undefined
+23:48:40 uid undefined
+23:48:48 uid undefined
+23:48:52 uid undefined
+23:48:55 uid undefined
+23:49:25 uid undefined
+23:50:2 uid undefined
+23:50:47 uid undefined
+23:53:49 uid undefined
+23:54:9 uid undefined
+23:54:15 uid undefined
+23:56:56 uid undefined
+23:57:51 uid undefined
+23:59:32 uid undefined
+23:59:47 uid undefined
+0:0:1 uid undefined
+0:0:21 uid undefined
+0:0:42 uid undefined
+0:0:59 uid undefined
+0:1:10 uid undefined
+0:1:54 uid undefined
+0:2:7 uid undefined
+0:3:3 uid undefined
+0:24:21 listening server at http://0.0.0.0:5000
+14:53:53 listening server at http://0.0.0.0:5000
+15:2:44 listening server at http://0.0.0.0:5000
+15:2:54 uid undefined
+15:4:44 listening server at http://0.0.0.0:5000
+15:5:33 uid undefined
+17:11:36 listening server at http://0.0.0.0:5000
+15:10:13 listening server at http://0.0.0.0:5000
+15:10:38 listening server at http://0.0.0.0:5000
+15:10:51 uid undefined
+15:11:0 uid undefined
+15:11:3 uid undefined
+15:11:3 { role: -1,
+  created_time: 1528873838870,
+  updated_time: 1528873838870,
+  avatar: 'default.gif',
+  _id: 5b20c38743f5510ed8f2b97c,
+  username: '游客' }
+15:11:3 登录检测: 没有登录 GET
+15:11:5 uid undefined
+15:27:32 uid undefined
+15:27:46 uid undefined
+15:27:49 uid undefined
+15:27:49 { role: -1,
+  created_time: 1528873838870,
+  updated_time: 1528873838870,
+  avatar: 'default.gif',
+  _id: 5b20c77543f5510ed8f2b980,
+  username: '游客' }
+15:27:49 登录检测: 没有登录 GET
+15:28:2 uid undefined
+15:28:2 { role: -1,
+  created_time: 1528873838870,
+  updated_time: 1528873838870,
+  avatar: 'default.gif',
+  _id: 5b20c78243f5510ed8f2b981,
+  username: '游客' }
+15:28:2 登录检测: 没有登录 GET
+15:28:36 listening server at http://0.0.0.0:5000
+15:28:45 uid undefined
+15:28:45 { role: -1,
+  created_time: 1528874916118,
+  updated_time: 1528874916118,
+  avatar: 'default.gif',
+  _id: 5b20c7ad7475871048b6e2e5,
+  username: '游客' }
+15:28:45 登录检测: 没有登录 GET
+15:32:41 listening server at http://0.0.0.0:5000
+15:33:53 listening server at http://0.0.0.0:5000
+15:34:8 listening server at http://0.0.0.0:5000
+15:34:29 uid undefined
+15:37:52 listening server at http://0.0.0.0:5000
+15:46:40 listening server at http://0.0.0.0:5000
+15:49:7 listening server at http://0.0.0.0:5000
+16:6:17 listening server at http://0.0.0.0:5000
+16:10:5 listening server at http://0.0.0.0:5000
+16:25:45 listening server at http://0.0.0.0:5000
+16:35:32 listening server at http://0.0.0.0:5000
+16:37:49 uid 5b20cc7f5c204d094403b32b
+16:40:15 listening server at http://0.0.0.0:5000
+16:50:26 listening server at http://0.0.0.0:5000
+17:13:18 listening server at http://0.0.0.0:5000
+17:34:22 listening server at http://0.0.0.0:5000
+17:37:40 uid undefined
+17:37:40 { created_time: 1528882462258,
+  updated_time: 1528882462258,
+  avatar: 'default.gif',
+  _id: 5b20e5e4476a68173813b5bc,
+  username: '游客' }
+17:40:0 listening server at http://0.0.0.0:5000
+17:40:5 listening server at http://0.0.0.0:5000
+17:40:38 listening server at http://0.0.0.0:5000
+17:41:16 uid undefined
+17:41:16 { created_time: 1528882838000,
+  updated_time: 1528882838000,
+  avatar: 'default.gif',
+  _id: 5b20e6bc8ce1ce109c8f7011,
+  username: '游客' }
+17:41:28 uid undefined
+17:41:28 { created_time: 1528882838000,
+  updated_time: 1528882838000,
+  avatar: 'default.gif',
+  _id: 5b20e6c88ce1ce109c8f7012,
+  username: '游客' }
+17:42:31 uid 5b20d9bc987efa08c038a0e4
+17:42:31 { created_time: 1528882838000,
+  updated_time: 1528882838000,
+  avatar: 'default.gif',
+  _id: 5b20e7078ce1ce109c8f7013,
+  username: '游客' }
+17:43:2 uid undefined
+17:43:2 { created_time: 1528882838000,
+  updated_time: 1528882838000,
+  avatar: 'default.gif',
+  _id: 5b20e7268ce1ce109c8f7014,
+  username: '游客' }
+17:50:19 listening server at http://0.0.0.0:5000
+17:50:54 listening server at http://0.0.0.0:5000
+17:50:59 {}
+17:52:13 listening server at http://0.0.0.0:5000
+17:52:18 {}
+17:52:18 2
+17:52:38 listening server at http://0.0.0.0:5000
+17:52:44 {} false
+17:52:44 2
+18:1:1 listening server at http://0.0.0.0:5000
+18:10:16 listening server at http://0.0.0.0:5000
+18:13:2 listening server at http://0.0.0.0:5000
+18:15:9 listening server at http://0.0.0.0:5000
+18:18:1 listening server at http://0.0.0.0:5000
+18:19:26 listening server at http://0.0.0.0:5000
+18:21:5 listening server at http://0.0.0.0:5000
+18:26:24 listening server at http://0.0.0.0:5000
+18:30:15 listening server at http://0.0.0.0:5000
+18:30:47 listening server at http://0.0.0.0:5000
+18:31:38 listening server at http://0.0.0.0:5000
+18:33:42 listening server at http://0.0.0.0:5000
+18:38:13 listening server at http://0.0.0.0:5000
+18:41:1 listening server at http://0.0.0.0:5000
+18:41:30 listening server at http://0.0.0.0:5000
+18:48:13 listening server at http://0.0.0.0:5000
+18:51:2 listening server at http://0.0.0.0:5000
+18:53:32 listening server at http://0.0.0.0:5000
+18:55:21 listening server at http://0.0.0.0:5000
+18:55:49 listening server at http://0.0.0.0:5000
+18:59:1 listening server at http://0.0.0.0:5000
+19:2:23 listening server at http://0.0.0.0:5000
+20:56:11 listening server at http://0.0.0.0:5000
+22:1:25 listening server at http://0.0.0.0:5000
+22:7:8 listening server at http://0.0.0.0:5000
+22:18:49 listening server at http://0.0.0.0:5000
+22:20:57 listening server at http://0.0.0.0:5000
+22:21:1 { title: '更新哈哈哈哈' }
+22:21:24 listening server at http://0.0.0.0:5000
+22:22:9 listening server at http://0.0.0.0:5000
+22:22:38 null
+22:24:17 listening server at http://0.0.0.0:5000
+22:24:22 null undefined
+22:24:51 listening server at http://0.0.0.0:5000
+22:24:55 null undefined
+22:25:17 listening server at http://0.0.0.0:5000
+22:25:20 null undefined
+22:26:52 listening server at http://0.0.0.0:5000
+22:27:2 listening server at http://0.0.0.0:5000
+22:28:4 listening server at http://0.0.0.0:5000
+22:28:46 listening server at http://0.0.0.0:5000
+22:28:49 { created_time: 1528898828227,
+  updated_time: 1528900025424,
+  noteCounts: 0,
+  _id: 5b2126fd39cff913a4cd634d,
+  title: '更新哈哈哈哈',
+  user_id: '5b21269839cff913a4cd634c' }
+22:30:42 listening server at http://0.0.0.0:5000
+22:30:48 { created_time: 1528898828227,
+  updated_time: 1528900025424,
+  noteCounts: 0,
+  _id: 5b2126fd39cff913a4cd634d,
+  title: '更新哈哈哈哈',
+  user_id: '5b21269839cff913a4cd634c' }
+22:31:33 listening server at http://0.0.0.0:5000
+22:31:56 { created_time: 1528900293371,
+  updated_time: 1528900293371,
+  note_counts: 0,
+  _id: 5b212ad283397f04b8537150,
+  title: 'asdasd',
+  user_id: '5b21269839cff913a4cd634c' }
+22:34:7 listening server at http://0.0.0.0:5000
+22:40:7 listening server at http://0.0.0.0:5000
+22:40:39 listening server at http://0.0.0.0:5000
+22:41:27 listening server at http://0.0.0.0:5000
+22:42:31 listening server at http://0.0.0.0:5000
+22:43:19 listening server at http://0.0.0.0:5000
+22:44:58 listening server at http://0.0.0.0:5000
+22:45:50 listening server at http://0.0.0.0:5000
+22:47:12 listening server at http://0.0.0.0:5000
+22:48:0 listening server at http://0.0.0.0:5000
+22:49:0 listening server at http://0.0.0.0:5000
+22:50:46 listening server at http://0.0.0.0:5000
+22:51:3 listening server at http://0.0.0.0:5000
+22:52:10 listening server at http://0.0.0.0:5000
+22:57:36 listening server at http://0.0.0.0:5000
+23:0:10 listening server at http://0.0.0.0:5000
+23:0:22 listening server at http://0.0.0.0:5000
+23:1:36 listening server at http://0.0.0.0:5000
+23:3:36 listening server at http://0.0.0.0:5000
+23:6:37 listening server at http://0.0.0.0:5000
+23:27:15 listening server at http://0.0.0.0:5000
+23:30:43 listening server at http://0.0.0.0:5000
+23:33:39 listening server at http://0.0.0.0:5000
+23:35:48 listening server at http://0.0.0.0:5000
+23:45:25 listening server at http://0.0.0.0:5000
+23:52:23 listening server at http://0.0.0.0:5000
+0:5:55 listening server at http://0.0.0.0:5000
+0:6:57 listening server at http://0.0.0.0:5000
+0:14:5 listening server at http://0.0.0.0:5000
+0:15:12 listening server at http://0.0.0.0:5000
+0:24:31 listening server at http://0.0.0.0:5000
+0:31:1 { created_time: 1528900447710,
+  updated_time: 1528900447710,
+  note_counts: 0,
+  _id: 5b212c6104596d1aa887f8ef,
+  title: 'asdasd',
+  user_id: '5b21269839cff913a4cd634c' }
+0:32:45 { created_time: 1528907071784,
+  updated_time: 1528907071784,
+  note_counts: 0,
+  _id: 5b2145b3bbbd030c28feb16e,
+  title: 'asd',
+  user_id: '5b21269839cff913a4cd634c' }
+0:34:4 { created_time: 1528907071784,
+  updated_time: 1528907071784,
+  note_counts: 0,
+  _id: 5b214624bbbd030c28feb16f,
+  title: 'asd',
+  user_id: '5b21269839cff913a4cd634c' }
+0:43:54 listening server at http://0.0.0.0:5000
+0:44:0 listening server at http://0.0.0.0:5000
+1:7:30 { created_time: 1528907071784,
+  updated_time: 1528907742059,
+  note_counts: 0,
+  _id: 5b2146aabbbd030c28feb170,
+  title: 'asdasdasd',
+  user_id: '5b21269839cff913a4cd634c' }
+1:7:32 { created_time: 1528907071784,
+  updated_time: 1528907737102,
+  note_counts: 0,
+  _id: 5b2147cebbbd030c28feb171,
+  title: 'testtest',
+  user_id: '5b21269839cff913a4cd634c' }
+1:7:39 { created_time: 1528907071784,
+  updated_time: 1528907071784,
+  note_counts: 0,
+  _id: 5b2147d2bbbd030c28feb172,
+  title: 'hahah',
+  user_id: '5b21269839cff913a4cd634c' }
+1:20:41 listening server at http://0.0.0.0:5000
+1:31:3 listening server at http://0.0.0.0:5000
+1:32:58 listening server at http://0.0.0.0:5000
+3:6:18 listening server at http://0.0.0.0:5000
+3:6:53 listening server at http://0.0.0.0:5000
+3:7:0 listening server at http://0.0.0.0:5000
+3:19:39 listening server at http://0.0.0.0:5000
+14:35:35 listening server at http://0.0.0.0:5000
+15:44:33 listening server at http://0.0.0.0:5000
+16:35:32 listening server at http://0.0.0.0:5000
+17:57:3 listening server at http://0.0.0.0:5000
+17:57:53 listening server at http://0.0.0.0:5000
+18:1:12 listening server at http://0.0.0.0:5000
+19:39:48 { created_time: 1529056872293,
+  updated_time: 1529056872293,
+  note_counts: 0,
+  _id: 5b23a563c3af9c16ac3c9116,
+  title: 'reas',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+19:45:4 { created_time: 1529056872293,
+  updated_time: 1529056872293,
+  note_counts: 0,
+  _id: 5b23a6bcc3af9c16ac3c9118,
+  title: 'esr',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+19:45:14 { created_time: 1529056872293,
+  updated_time: 1529056872293,
+  note_counts: 0,
+  _id: 5b23a6c8c3af9c16ac3c9119,
+  title: 'ers',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+19:45:15 { created_time: 1529056872293,
+  updated_time: 1529056872293,
+  note_counts: 0,
+  _id: 5b23a668c3af9c16ac3c9117,
+  title: 'res',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+20:15:49 listening server at http://0.0.0.0:5000
+23:52:13 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 0,
+  _id: 5b23df09f56aaf0d4cd0bd44,
+  title: 'haha',
+  user_id: '5b23deecf56aaf0d4cd0bd43' }
+23:52:15 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 0,
+  _id: 5b23df1cf56aaf0d4cd0bd45,
+  title: 'haha',
+  user_id: '5b23deecf56aaf0d4cd0bd43' }
+0:13:48 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 0,
+  _id: 5b23e537f56aaf0d4cd0bd47,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:14:49 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 0,
+  _id: 5b23e5c4f56aaf0d4cd0bd49,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:15:58 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 1,
+  _id: 5b23e5fcf56aaf0d4cd0bd4b,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:17:34 listening server at http://0.0.0.0:5000
+0:17:49 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 1,
+  _id: 5b23e5fcf56aaf0d4cd0bd4b,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:19:0 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 1,
+  _id: 5b23e5fcf56aaf0d4cd0bd4b,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:19:3 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 1,
+  _id: 5b23e5fcf56aaf0d4cd0bd4b,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:19:14 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 1,
+  _id: 5b23e5fcf56aaf0d4cd0bd4b,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:19:24 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 1,
+  _id: 5b23e5fcf56aaf0d4cd0bd4b,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:20:35 listening server at http://0.0.0.0:5000
+0:20:55 { created_time: 1529064949688,
+  updated_time: 1529064949688,
+  note_counts: 1,
+  _id: 5b23e5fcf56aaf0d4cd0bd4b,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:25:24 { created_time: 1529079635341,
+  updated_time: 1529079635341,
+  note_counts: 1,
+  _id: 5b23e84e3946040eb02242e8,
+  title: '第一个笔记本',
+  user_id: '5b238e8bc3af9c16ac3c9115' }
+0:27:53 listening server at http://0.0.0.0:5000
+1:4:56 listening server at http://0.0.0.0:5000

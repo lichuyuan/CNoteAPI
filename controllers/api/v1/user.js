@@ -1,4 +1,4 @@
-const User = require('../../../models//user')
+const User = require('../../../models/user')
 const auth = require('../../auth')
 
 const avatarUpdate = async (req, res) => {
@@ -22,7 +22,7 @@ const login = async (req, res) => {
     const form = req.body
     const b = await User.validateLogin(form)
     if (b) {
-        const u = await User.findBy('username', form.username)
+        const u = await User.findOne({ username: form.username })
         // 直接指定 req.session 的 key, 然后通过这个 key 来获取设置的值
         req.session.uid = u.id
         const dict = {
@@ -43,7 +43,7 @@ const login = async (req, res) => {
 
 const register = async (req, res) => {
     const form = req.body
-    const u = await User.register(form)
+    const u = await User.validateRegister(form)
     if (u === null) {
         const dict = {
             success: false,
@@ -52,6 +52,7 @@ const register = async (req, res) => {
         }
         res.json(dict)
     } else {
+        req.session.uid = u.id
         const dict = {
             success: true,
             data: u,
@@ -61,8 +62,36 @@ const register = async (req, res) => {
     }
 }
 
+const logout = (req, res) => {
+    req.session = null
+    const dict = {
+        success: true,
+        message: '注销成功',
+    }
+    res.json(dict)
+}
+
+const getInfo = async (req, res) => {
+    const u = await auth.currentUser(req)
+    let dict
+    if (u === null) {
+        dict = {
+            success: false,
+            message: '未登录',
+        }
+    } else {
+        dict = {
+            success: true,
+            data: u,
+        }
+    }
+    res.json(dict)
+}
+
 module.exports = {
     avatarUpdate,
     login,
     register,
+    logout,
+    getInfo
 }

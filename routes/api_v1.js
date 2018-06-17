@@ -3,7 +3,8 @@ const express = require('express')
 const multer = require('multer')
 const config = require('../config')
 
-const todo = require('../controllers/api/v1/todo')
+const notebook = require('../controllers/api/v1/notebook')
+const note = require('../controllers/api/v1/note')
 const user = require('../controllers/api/v1/user')
 
 const auth = require('../controllers/auth')
@@ -17,10 +18,21 @@ const upload = multer({
 
 const router = express.Router()
 
-router.post('/todo/add', todo.add)
-router.post('/todo/update', todo.update)
+router.get('/notebook', auth.loginRequired, notebook.all)
+router.post('/notebook', auth.loginRequired, notebook.add)
+router.patch('/notebook/:id', auth.loginRequired, notebook.update)
+router.delete('/notebook/:id', auth.loginRequired, notebook.remove)
+
+router.get('/note', auth.loginRequired, note.all)
+router.post('/note', auth.loginRequired, note.add)
+router.patch('/note/:id', auth.loginRequired, note.update)
+router.delete('/note/:id', auth.loginRequired, note.remove)
 
 router.post('/user/avatar/update', auth.loginRequired, upload.single('avatar'), user.avatarUpdate)
-router.post('/todo/update', todo.update)
+router.post('/user/login', user.login)
+router.post('/user/register', user.register)
+router.get('/user/logout', auth.loginRequired, user.logout)
+router.get('/user', user.getInfo)
+
 
 module.exports = router

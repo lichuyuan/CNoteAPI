@@ -8,11 +8,6 @@ const Schema = mongoose.Schema
 const userSchema = new Schema({
     username: String,
     password: String,
-    note: String,
-    role: {
-        type: Number,
-        default: 2,
-    },
     created_time: {
         type: Number,
         default: Date.now(),
@@ -23,9 +18,9 @@ const userSchema = new Schema({
     },
     avatar: {
         type: String,
-        default: 'default.gif',
+        default: 'default.png',
     },
-})
+}, { versionKey: false })
 
 class UserStore extends Model {
     static async create(form) {
@@ -43,18 +38,17 @@ class UserStore extends Model {
     }
 
     static async validateLogin(form) {
-        const {username, password} = form
-        const u = await this.findBy('username', username)
+        const { username, password } = form
+        const u = await this.findOne({ username })
         return u !== null && u.password === this.saltedPassword(password)
     }
 
-    static async register(form) {
+    static async validateRegister(form) {
         const { username, password } = form
         const validForm = username.length > 2 && password.length > 2
-        const uniqueUser = await this.findBy('username', username) === null
+        const uniqueUser = await this.findOne({ username }) === null
         if (validForm && uniqueUser) {
-            const u = await this.create(form)
-            return u
+            return this.create(form)
         } else {
             return null
         }

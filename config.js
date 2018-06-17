@@ -6,7 +6,7 @@ const config = {
     uploadPath: 'uploads/',
 
     // mongodb address
-    db: 'mongodb://localhost:27017/todo',
+    db: 'mongodb://localhost:27017/note',
     
     port: 5000,
 

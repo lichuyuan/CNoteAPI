@@ -11,6 +11,14 @@ const { log } = require('./utils/common')
 const app = express()
 
 const configureApp = () => {
+
+    const corsOptions = {
+        origin: 'http://localhost:8080',
+        credentials: true,
+        maxAge: '1728000'
+    }
+    app.use(cors(corsOptions))
+
     app.use(bodyParser.urlencoded({
         extended: true
     }))
@@ -48,8 +56,6 @@ const configureNunjucks = () => {
     const filter = require('./utils/filter')
     // nunjucks 添加自定义的过滤器
     env.addFilter('time', (ts) => filter.time(ts))
-    env.addFilter('todoLevel', (ts) => filter.todoLevel(ts))
-    env.addFilter('todoLevelClass', (ts) => filter.todoLevelClass(ts))
 }
 
 const registerRoutes = () => {
@@ -57,7 +63,7 @@ const registerRoutes = () => {
     const api = require('./routes/api_v1')
 
     app.use('/', web)
-    app.use('/api/v1', cors(), api)
+    app.use('/api/v1', api)
 
     app.use((req, res, next) => {
         res.status(404)
