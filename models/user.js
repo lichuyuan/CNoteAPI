@@ -25,8 +25,7 @@ const userSchema = new Schema({
 class UserStore extends Model {
     static async create(form) {
         form.password = this.saltedPassword(form.password)
-        const u = await super.create(form)
-        return u
+        return super.create(form)
     }
 
     static saltedPassword(password, salt='sjdf823jewqlk') {
@@ -45,8 +44,13 @@ class UserStore extends Model {
 
     static async validateRegister(form) {
         const { username, password } = form
+<<<<<<< HEAD
         const validForm = username.length > 2 && password.length > 2
         const uniqueUser = await this.findOne({ username }) === null
+=======
+        const validForm = username.length >= 6 && password.length >= 3
+        const uniqueUser = await this.findOne({'username': username}) === null
+>>>>>>> 74f6450f3887fbee9d482b1a98d673fb0bb56f92
         if (validForm && uniqueUser) {
             return this.create(form)
         } else {
