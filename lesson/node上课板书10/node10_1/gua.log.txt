@@ -1,0 +1,9 @@
+20:2:40 listening server at http://0.0.0.0:4000
+20:3:29 请求方法 GET
+20:3:29 request, query 参数 {}
+20:5:31 请求方法 GET
+20:5:31 request, query 参数 { message_get: 'message from get' }
+20:7:2 message_add 请求方法 POST
+20:7:2 request, POST 的 form 表单数据 { message_post: 'node post' }
+20:7:2 请求方法 GET
+20:7:2 request, query 参数 {}

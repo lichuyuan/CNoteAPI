@@ -29,14 +29,9 @@ router.patch('/note/:id', auth.loginRequired, note.update)
 router.delete('/note/:id', auth.loginRequired, note.remove)
 
 router.post('/user/avatar/update', auth.loginRequired, upload.single('avatar'), user.avatarUpdate)
-<<<<<<< HEAD
 router.post('/user/login', user.login)
 router.post('/user/register', user.register)
 router.get('/user/logout', auth.loginRequired, user.logout)
 router.get('/user', user.getInfo)
-
-=======
-router.post('/user/register', user.register)
->>>>>>> 74f6450f3887fbee9d482b1a98d673fb0bb56f92
 
 module.exports = router

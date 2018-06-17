@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "created_time": 1517137703433,
+    "updated_time": 1517137703433,
+    "views": 21,
+    "title": "11111",
+    "content": "jsdfsdf",
+    "user_id": 1,
+    "board_id": 3
+  },
+  {
+    "id": 2,
+    "created_time": 1517231903776,
+    "updated_time": 1517231903776,
+    "views": 0,
+    "title": "问答的第一帖",
+    "content": "第一帖",
+    "user_id": 1,
+    "board_id": 2
+  }
+]

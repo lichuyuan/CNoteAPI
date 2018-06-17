@@ -45,12 +45,7 @@ const login = async (req, res) => {
 
 const register = async (req, res) => {
     const form = req.body
-<<<<<<< HEAD
     const u = await User.validateRegister(form)
-=======
-    log(form, req)
-    const u = await User.register(form)
->>>>>>> 74f6450f3887fbee9d482b1a98d673fb0bb56f92
     if (u === null) {
         const dict = {
             success: false,

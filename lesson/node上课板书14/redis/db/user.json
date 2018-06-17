@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "created_time": 1517135874186,
+    "updated_time": 1517135874186,
+    "username": "gua",
+    "password": "1eab58b60dbef4464fbda8aa9f80f133d39c055fe03fac48cfd42e3759530624",
+    "note": "",
+    "role": 2,
+    "avatar": "4c22452d00dff823e87e8d5c9f814669"
+  },
+  {
+    "id": 2,
+    "created_time": 1517136001462,
+    "updated_time": 1517136001462,
+    "username": "xiao",
+    "password": "1eab58b60dbef4464fbda8aa9f80f133d39c055fe03fac48cfd42e3759530624",
+    "note": "",
+    "role": 2,
+    "avatar": "default.gif"
+  }
+]
