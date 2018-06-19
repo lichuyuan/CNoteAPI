@@ -28,10 +28,11 @@ router.post('/note', auth.loginRequired, note.add)
 router.patch('/note/:id', auth.loginRequired, note.update)
 router.delete('/note/:id', auth.loginRequired, note.remove)
 
+router.get('/user/logout', auth.loginRequired, user.logout)
+router.get('/user', user.getInfo)
+router.get('/user/avatar/:filename', auth.loginRequired, user.avatar)
 router.post('/user/avatar/update', auth.loginRequired, upload.single('avatar'), user.avatarUpdate)
 router.post('/user/login', user.login)
 router.post('/user/register', user.register)
-router.get('/user/logout', auth.loginRequired, user.logout)
-router.get('/user', user.getInfo)
 
 module.exports = router

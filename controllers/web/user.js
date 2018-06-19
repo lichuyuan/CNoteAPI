@@ -1,4 +1,4 @@
-const config = require('../../config')
+const config = require('../../config/index')
 
 const avatar = (req, res) => {
     const path = require('path')

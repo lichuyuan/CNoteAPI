@@ -1,3 +1,4 @@
 node_modules/
 .idea/
-debug.log.txt
+utils/debug.log.txt
+uploads/

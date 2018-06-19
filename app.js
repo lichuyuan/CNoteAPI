@@ -13,9 +13,9 @@ const app = express()
 const configureApp = () => {
 
     const corsOptions = {
-        origin: 'http://localhost:8080',
+        origin: config.corsOrigin,
         credentials: true,
-        maxAge: '1728000'
+        maxAge: config.maxAge,
     }
     app.use(cors(corsOptions))
 
@@ -31,13 +31,6 @@ const configureApp = () => {
 
     configureNunjucks()
 
-    // flash message
-    app.use((req, res, next) => {
-        res.locals.flash = req.session.flash
-        delete req.session.flash
-        next()
-    })
-
     const asset = path.join(__dirname, 'static')
     app.use('/static', express.static(asset))
 
@@ -52,7 +45,6 @@ const configureNunjucks = () => {
         noCache: true,
     })
 
-    // 引入自定义的过滤器, 过滤器就是一个自定义的函数, nunjucks 可以用来处理数据
     const filter = require('./utils/filter')
     // nunjucks 添加自定义的过滤器
     env.addFilter('time', (ts) => filter.time(ts))
