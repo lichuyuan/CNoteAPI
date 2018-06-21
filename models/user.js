@@ -8,19 +8,17 @@ const Schema = mongoose.Schema
 const userSchema = new Schema({
     username: String,
     password: String,
-    created_time: {
-        type: Number,
-        default: Date.now(),
-    },
-    updated_time: {
-        type: Number,
-        default: Date.now(),
-    },
     avatar: {
         type: String,
         default: 'default.png',
     },
-}, { versionKey: false })
+}, {
+    versionKey: false,
+    timestamps: {
+        createdAt: 'created_time',
+        updatedAt: 'updated_time'
+    }
+})
 
 class UserStore extends Model {
     static async create(form) {
@@ -62,7 +60,6 @@ class UserStore extends Model {
         const t = await this.findById(id)
         const frozonKeys = [
             'id',
-            'created_time',
         ]
         Object.keys(form).forEach(k => {
             if (!frozonKeys.includes(k)) {
@@ -70,7 +67,6 @@ class UserStore extends Model {
             }
         })
 
-        t.updated_time = Date.now()
         t.save()
         return t
     }

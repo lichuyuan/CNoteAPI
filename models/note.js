@@ -12,15 +12,13 @@ const noteSchema = new Schema({
         type: Number,
         default: 0,
     },
-    created_time: {
-        type: Number,
-        default: Date.now(),
-    },
-    updated_time: {
-        type: Number,
-        default: Date.now(),
-    },
-}, { versionKey: false })
+}, {
+    versionKey: false,
+    timestamps: {
+        createdAt: 'created_time',
+        updatedAt: 'updated_time'
+    }
+})
 
 class NoteStore extends Model {
 
@@ -28,7 +26,6 @@ class NoteStore extends Model {
         const note = await this.get(id)
         const frozonKeys = [
             'id',
-            'created_time',
         ]
         Object.keys(form).forEach(k => {
             if (!frozonKeys.includes(k)) {
@@ -36,7 +33,6 @@ class NoteStore extends Model {
             }
         })
 
-        note.updated_time = Date.now()
         note.save()
         return note
     }

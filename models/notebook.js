@@ -6,19 +6,17 @@ const Schema = mongoose.Schema
 const notebookSchema = new Schema({
     title: String,
     user_id: String,
-    created_time: {
-        type: Number,
-        default: Date.now(),
-    },
-    updated_time: {
-        type: Number,
-        default: Date.now(),
-    },
     note_counts: {
         type: Number,
         default: 0,
     },
-}, { versionKey: false })
+}, {
+    versionKey: false,
+    timestamps: {
+        createdAt: 'created_time',
+        updatedAt: 'updated_time'
+    }
+})
 
 class NotebookStore extends Model {
 
@@ -26,7 +24,6 @@ class NotebookStore extends Model {
         const t = await this.get(id)
         const frozonKeys = [
             'id',
-            'created_time',
         ]
         Object.keys(form).forEach(k => {
             if (!frozonKeys.includes(k)) {
@@ -34,13 +31,11 @@ class NotebookStore extends Model {
             }
         })
 
-        t.updated_time = Date.now()
         t.save()
         return t
     }
     static async removeOne(id) {
         const n = await super.get(id)
-        log(n)
         if (n.note_counts === 0) {
             const query = {
                 _id: id,

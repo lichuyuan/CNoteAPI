@@ -31,7 +31,6 @@ const update = async (req, res) => {
     const notebookId = req.params.id
     const form = req.body
     const t = await Notebook.update(notebookId, form)
-    console.log(t)
     const dict = {
         success: true,
         data: t,
