@@ -6,6 +6,7 @@ const config = require('../config')
 const notebook = require('../controllers/api/v1/notebook')
 const note = require('../controllers/api/v1/note')
 const user = require('../controllers/api/v1/user')
+const order = require('../controllers/api/v1/order')
 
 const auth = require('../controllers/auth')
 const { log } = require('../utils/common')
@@ -34,5 +35,8 @@ router.get('/user/avatar/:filename', auth.loginRequired, user.avatar)
 router.post('/user/avatar/update', auth.loginRequired, upload.single('avatar'), user.avatarUpdate)
 router.post('/user/login', user.login)
 router.post('/user/register', user.register)
+
+router.get('/order', auth.loginRequired, order.all)
+router.post('/order', auth.loginRequired, order.add)
 
 module.exports = router
