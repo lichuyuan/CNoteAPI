@@ -1,10 +1,28 @@
-const Order = require('../../../models/order')
+const RobotOrder = require('../../../models/robot-order')
 // const Notebook = require('../../../models/notebook')
 const auth = require('../../auth')
 
 const all = async (req, res) => {
     const form = req.query
-    const n = await Order.paginate({}, form)
+    const reg = new RegExp(form.value || "", 'i')
+
+    const query = {
+        $or: [
+            {
+                remark: {$regex: reg}
+            },
+            {
+                streamer_nickname: {$regex: reg}
+            },
+            {
+                room_id: {$regex: reg}
+            },
+            {
+                room_manage_id: {$regex: reg}
+            }
+        ]
+    }
+    const n = await RobotOrder.paginate(query, form)
     const dict = {
         success: true,
         data: n,
@@ -15,8 +33,9 @@ const all = async (req, res) => {
 const add = async (req, res) => {
     const form = req.body
     const u = await auth.currentUser(req)
-    const t = await Order.create(form, {
+    const t = await RobotOrder.create(form, {
         user_id: u.id,
+        username: u.username
     })
     const dict = {
         success: true,
@@ -27,9 +46,8 @@ const add = async (req, res) => {
 }
 
 const update = async (req, res) => {
-    const noteId = req.params.id
     const form = req.body
-    const t = await Note.update(noteId, form)
+    const t = await RobotOrder.update(req.params.id, form)
     let dict
     if (form.deleted === 1) {
         dict = {
@@ -47,10 +65,8 @@ const update = async (req, res) => {
 }
 
 const remove = async (req, res) => {
-    const noteId = req.params.id
-    const note = await Note.get(noteId)
-    const t = await Note.remove(noteId)
-    const n = await Notebook.findOneAndUpdate({'_id': note.notebook_id}, { $inc: { note_counts: -1 }})
+    const t = await RobotOrder.remove(req.params.id)
+    // const n = await Notebook.findOneAndUpdate({'_id': note.notebook_id}, { $inc: { note_counts: -1 }})
     const dict = {
         success: true,
         message: '删除成功',

@@ -1,10 +1,26 @@
-const Order = require('../../../models/order')
+const VipOrder = require('../../../models/vip-order')
 // const Notebook = require('../../../models/notebook')
+const Account = require('../../../models/account')
 const auth = require('../../auth')
 
 const all = async (req, res) => {
     const form = req.query
-    const n = await Order.paginate({}, form)
+    const reg = new RegExp(form.value || "", 'i')
+
+    const query = {
+        $or: [
+            {
+                remark: {$regex: reg}
+            },
+            {
+                streamer_nickname: {$regex: reg}
+            },
+            {
+                room_id: {$regex: reg}
+            }
+        ]
+    }
+    const n = await VipOrder.paginate(query, form)
     const dict = {
         success: true,
         data: n,
@@ -15,9 +31,13 @@ const all = async (req, res) => {
 const add = async (req, res) => {
     const form = req.body
     const u = await auth.currentUser(req)
-    const t = await Order.create(form, {
+    const t = await VipOrder.create(form, {
         user_id: u.id,
+        username: u.username
     })
+    for (let a of form.occupied_account) {
+        let n = await Account.findOneAndUpdate({'_id': a}, { $inc: { occupied_count: 1 }})
+    }
     const dict = {
         success: true,
         data: t,
@@ -27,9 +47,8 @@ const add = async (req, res) => {
 }
 
 const update = async (req, res) => {
-    const noteId = req.params.id
     const form = req.body
-    const t = await Note.update(noteId, form)
+    const t = await VipOrder.update(req.params.id, form)
     let dict
     if (form.deleted === 1) {
         dict = {
@@ -47,10 +66,12 @@ const update = async (req, res) => {
 }
 
 const remove = async (req, res) => {
-    const noteId = req.params.id
-    const note = await Note.get(noteId)
-    const t = await Note.remove(noteId)
-    const n = await Notebook.findOneAndUpdate({'_id': note.notebook_id}, { $inc: { note_counts: -1 }})
+    const id = req.params.id
+    const t = await VipOrder.remove(id)
+    const order = VipOrder.get(id)
+    for (let a of order.occupied_account) {
+        let n = await Account.findOneAndUpdate({'_id': a}, { $inc: { occupied_count: -1 }})
+    }
     const dict = {
         success: true,
         message: '删除成功',

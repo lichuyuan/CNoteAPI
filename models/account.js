@@ -1,5 +1,6 @@
 const { mongoose, Model } = require('./main')
 const { log } = require('../utils/common')
+const mongoosePaginate = require('mongoose-paginate-v2')
 
 const Schema = mongoose.Schema
 
@@ -9,9 +10,16 @@ const schemaInstance = new Schema({
     huya_nickname: String,
     huya_id: String,
     huya_yyuid: String,
-    register_user_id: String,
-    usage_count: Number,
+    occupied_count: {
+        type: Number,
+        default: 0
+    },
+    editable: {
+        type: Boolean,
+        default: false
+    },
     user_id: String,
+    username: String,
     deleted: {
         type: Number,
         default: 0,
@@ -23,6 +31,8 @@ const schemaInstance = new Schema({
         updatedAt: 'updated_time'
     }
 })
+
+schemaInstance.plugin(mongoosePaginate);
 
 class AccountStore extends Model {
 
@@ -41,8 +51,8 @@ class AccountStore extends Model {
         return note
     }
     static async removeOne(id) {
-        const note = await super.get(id)
-        return super.deleteOne(query)
+        const _id = await super.get(id)
+        return super.deleteOne({_id})
     }
 }
 

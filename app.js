@@ -32,7 +32,7 @@ const configureApp = () => {
     configureNunjucks()
 
     const asset = path.join(__dirname, 'static')
-    app.use('/static', express.static(asset))
+    app.use('/api/v1/static', express.static(asset))
 
     registerRoutes()
 }

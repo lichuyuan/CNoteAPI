@@ -3,7 +3,7 @@ const config = require('../config')
 
 mongoose.Promise = global.Promise
 
-mongoose.connect(config.db)
+mongoose.connect(config.db, { useNewUrlParser: true })
 
 class Model extends mongoose.Model {
     // // 查询所有

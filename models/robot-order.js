@@ -7,14 +7,15 @@ const Schema = mongoose.Schema
 const schemaInstance = new Schema({
     remark: String, // 备注
     type: String, // 类型
-    sysadmin_id: Number,
+    sysadmin_id: String,
     streamer_nickname: String,
-    room_id: Number,
+    room_id: String,
     source: String,
     source_buyer_id: String,
     working_time: String,
     valid_time: Number,
     user_id: String,
+    username: String,
     editable: {
         type: Boolean,
         default: false
@@ -25,7 +26,6 @@ const schemaInstance = new Schema({
     },
     room_manage_id: String,
     room_manage_yyuid: String,
-    occupied_account: Array
 }, {
     versionKey: false,
     timestamps: {
@@ -34,7 +34,7 @@ const schemaInstance = new Schema({
     }
 })
 
-class OrderStore extends Model {
+class RobotOrderStore extends Model {
 
     static async update(id, form) {
         const note = await this.get(id)
@@ -52,14 +52,14 @@ class OrderStore extends Model {
     }
 
     static async removeOne(id) {
-        const note = await super.get(id)
-        return super.deleteOne(query)
+        const _id = await super.get(id)
+        return super.deleteOne({_id})
     }
 }
 
-schemaInstance.loadClass(OrderStore)
+schemaInstance.loadClass(RobotOrderStore)
 
 schemaInstance.plugin(mongoosePaginate);
-const Order = mongoose.model('Order', schemaInstance)
+const RobotOrder = mongoose.model('RobotOrder', schemaInstance)
 
-module.exports = Order
+module.exports = RobotOrder
