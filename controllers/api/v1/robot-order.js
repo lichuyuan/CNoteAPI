@@ -1,6 +1,7 @@
 const RobotOrder = require('../../../models/robot-order')
 // const Notebook = require('../../../models/notebook')
 const auth = require('../../auth')
+const moment = require('moment')
 
 const all = async (req, res) => {
     const form = req.query
@@ -32,6 +33,7 @@ const all = async (req, res) => {
 
 const add = async (req, res) => {
     const form = req.body
+    form.over_time = moment(form.working_time).add(form.valid_time, 'h').format()
     const u = await auth.currentUser(req)
     const t = await RobotOrder.create(form, {
         user_id: u.id,

@@ -54,4 +54,6 @@ router.post('/account', auth.loginRequired, account.add)
 router.patch('/account/:id', auth.loginRequired, account.update)
 router.delete('/account/:id', auth.loginRequired, account.remove)
 
+router.get('/order/will/over', auth.loginRequired, account.all)
+
 module.exports = router

@@ -16,6 +16,7 @@ const schemaInstance = new Schema({
     valid_time: Number,
     user_id: String,
     username: String,
+    over_time: String,
     editable: {
         type: Boolean,
         default: false

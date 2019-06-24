@@ -2,6 +2,7 @@ const VipOrder = require('../../../models/vip-order')
 // const Notebook = require('../../../models/notebook')
 const Account = require('../../../models/account')
 const auth = require('../../auth')
+const moment = require('moment')
 
 const all = async (req, res) => {
     const form = req.query
@@ -31,6 +32,7 @@ const all = async (req, res) => {
 const add = async (req, res) => {
     const form = req.body
     const u = await auth.currentUser(req)
+    form.over_time = moment(form.working_time).add(form.valid_time, 'h').format()
     const t = await VipOrder.create(form, {
         user_id: u.id,
         username: u.username
@@ -67,11 +69,11 @@ const update = async (req, res) => {
 
 const remove = async (req, res) => {
     const id = req.params.id
-    const t = await VipOrder.remove(id)
     const order = VipOrder.get(id)
     for (let a of order.occupied_account) {
         let n = await Account.findOneAndUpdate({'_id': a}, { $inc: { occupied_count: -1 }})
     }
+    const t = await VipOrder.remove(id)
     const dict = {
         success: true,
         message: '删除成功',
