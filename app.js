@@ -31,8 +31,10 @@ const configureApp = () => {
 
     configureNunjucks()
 
-    const asset = path.join(__dirname, 'static')
+    const asset = path.join(__dirname, 'assets')
     app.use('/api/v1/static', express.static(asset))
+    const frontend = path.join(__dirname, 'static')
+    app.use('/', express.static(frontend))
 
     registerRoutes()
 }
@@ -54,7 +56,7 @@ const registerRoutes = () => {
     const web = require('./routes/web')
     const api = require('./routes/api_v1')
 
-    app.use('/', web)
+    // app.use('/', web)
     app.use('/api/v1', api)
 
     app.use((req, res, next) => {
